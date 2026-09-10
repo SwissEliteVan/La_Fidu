@@ -19,11 +19,16 @@
       "head_at_start": null,
       "remote_sha_at_start": null
     },
-    "ia1": null,
+    "ia1": {
+      "provider": "claude",
+      "summary": "Point d'entrée documentaire = markdown_docs/README.md (7 documents actifs : README, CONCEPT_BUSINESS, ARCHITECTURE, DESIGN_SYSTEM, HOMEPAGE_COPY, SEO_CONTENT, DEPLOYMENT), tous corrompus (mojibake, lignes tronquées) ; aucune SOURCE OF TRUTH, aucune décision verrouillée, pas de dossier docs/ ; services externes référencés (Calendly, Google Analytics) sous politique deny ; TOOLS/__pycache__/*.pyc versionnés ; commit initial 94a91a4 présent et poussé",
+      "ts": "2026-09-10T20:16:38Z",
+      "verdict": "ANALYSE"
+    },
     "ia2": null,
     "ia3": null,
     "ia4": null,
-    "last_completed_stage": null,
+    "last_completed_stage": "1-IA1-ANALYSE.md",
     "mode": "NEW_WORK",
     "revalidation_authorized_by_ia4": false,
     "trigger": "initial"
