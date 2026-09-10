@@ -1,0 +1,40 @@
+{
+  "activation_reason": "",
+  "applicability": "TO_DEFINE",
+  "applicability_scope": null,
+  "approved_changes": [],
+  "authorized_files": [],
+  "category": "46-ENV-PARITY",
+  "change_risk": null,
+  "current_cycle": {
+    "base_validation_commit": null,
+    "delta": {
+      "from_commit": null,
+      "relevant": false,
+      "summary": "",
+      "to_commit": null
+    },
+    "git": {
+      "checked_at": null,
+      "head_at_start": null,
+      "remote_sha_at_start": null
+    },
+    "ia1": null,
+    "ia2": null,
+    "ia3": null,
+    "ia4": null,
+    "last_completed_stage": null,
+    "mode": "NEW_WORK",
+    "revalidation_authorized_by_ia4": false,
+    "trigger": "initial"
+  },
+  "dependencies": [
+    "44-TESTING"
+  ],
+  "file_budget": null,
+  "last_validation": null,
+  "open_blockers": [],
+  "schema_version": "2.2",
+  "status": null,
+  "validation_commit": null
+}

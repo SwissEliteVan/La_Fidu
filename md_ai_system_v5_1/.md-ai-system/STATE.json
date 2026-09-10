@@ -1,0 +1,329 @@
+{
+  "categories": {
+    "00-START": {
+      "applicability": "ACTIVE",
+      "state_file": "state/00-START.json",
+      "status": null,
+      "validation_commit": null
+    },
+    "01-PROJECT-PROFILE-APPLICABILITY": {
+      "applicability": "ACTIVE",
+      "state_file": "state/01-PROJECT-PROFILE-APPLICABILITY.json",
+      "status": null,
+      "validation_commit": null
+    },
+    "02-STACK": {
+      "applicability": "TO_DEFINE",
+      "state_file": "state/02-STACK.json",
+      "status": null,
+      "validation_commit": null
+    },
+    "03-BOOTSTRAP": {
+      "applicability": "TO_DEFINE",
+      "state_file": "state/03-BOOTSTRAP.json",
+      "status": null,
+      "validation_commit": null
+    },
+    "04-ARCHITECTURE": {
+      "applicability": "TO_DEFINE",
+      "state_file": "state/04-ARCHITECTURE.json",
+      "status": null,
+      "validation_commit": null
+    },
+    "05-DATA-BACKEND-AUTH": {
+      "applicability": "TO_DEFINE",
+      "state_file": "state/05-DATA-BACKEND-AUTH.json",
+      "status": null,
+      "validation_commit": null
+    },
+    "06-SAAS-LIFECYCLE": {
+      "applicability": "TO_DEFINE",
+      "state_file": "state/06-SAAS-LIFECYCLE.json",
+      "status": null,
+      "validation_commit": null
+    },
+    "07-ECOMMERCE-LIFECYCLE": {
+      "applicability": "TO_DEFINE",
+      "state_file": "state/07-ECOMMERCE-LIFECYCLE.json",
+      "status": null,
+      "validation_commit": null
+    },
+    "08-INTERNAL-APP-GOVERNANCE": {
+      "applicability": "TO_DEFINE",
+      "state_file": "state/08-INTERNAL-APP-GOVERNANCE.json",
+      "status": null,
+      "validation_commit": null
+    },
+    "09-API-BACKEND-GOVERNANCE": {
+      "applicability": "TO_DEFINE",
+      "state_file": "state/09-API-BACKEND-GOVERNANCE.json",
+      "status": null,
+      "validation_commit": null
+    },
+    "10-BACKUP-RESTORE": {
+      "applicability": "TO_DEFINE",
+      "state_file": "state/10-BACKUP-RESTORE.json",
+      "status": null,
+      "validation_commit": null
+    },
+    "11-MARKETING-BRAND-DIFFERENTIATION": {
+      "applicability": "TO_DEFINE",
+      "state_file": "state/11-MARKETING-BRAND-DIFFERENTIATION.json",
+      "status": null,
+      "validation_commit": null
+    },
+    "12-DESIGN-SYSTEM-BRAND": {
+      "applicability": "TO_DEFINE",
+      "state_file": "state/12-DESIGN-SYSTEM-BRAND.json",
+      "status": null,
+      "validation_commit": null
+    },
+    "13-DESIGN-NAVIGATION": {
+      "applicability": "TO_DEFINE",
+      "state_file": "state/13-DESIGN-NAVIGATION.json",
+      "status": null,
+      "validation_commit": null
+    },
+    "14-MULTILINGUE": {
+      "applicability": "TO_DEFINE",
+      "state_file": "state/14-MULTILINGUE.json",
+      "status": null,
+      "validation_commit": null
+    },
+    "15-COPYWRITING-PERSUASION": {
+      "applicability": "TO_DEFINE",
+      "state_file": "state/15-COPYWRITING-PERSUASION.json",
+      "status": null,
+      "validation_commit": null
+    },
+    "16-CONTENT-BLOG": {
+      "applicability": "TO_DEFINE",
+      "state_file": "state/16-CONTENT-BLOG.json",
+      "status": null,
+      "validation_commit": null
+    },
+    "17-MEDIA-HERO-IMAGES-BLOG": {
+      "applicability": "TO_DEFINE",
+      "state_file": "state/17-MEDIA-HERO-IMAGES-BLOG.json",
+      "status": null,
+      "validation_commit": null
+    },
+    "18-ASSET-LICENSES": {
+      "applicability": "TO_DEFINE",
+      "state_file": "state/18-ASSET-LICENSES.json",
+      "status": null,
+      "validation_commit": null
+    },
+    "19-COMMERCIAL-FUNNEL-CONVERSION": {
+      "applicability": "TO_DEFINE",
+      "state_file": "state/19-COMMERCIAL-FUNNEL-CONVERSION.json",
+      "status": null,
+      "validation_commit": null
+    },
+    "20-CRM-LEAD-LIFECYCLE": {
+      "applicability": "TO_DEFINE",
+      "state_file": "state/20-CRM-LEAD-LIFECYCLE.json",
+      "status": null,
+      "validation_commit": null
+    },
+    "21-POST-CONVERSION-RETENTION": {
+      "applicability": "TO_DEFINE",
+      "state_file": "state/21-POST-CONVERSION-RETENTION.json",
+      "status": null,
+      "validation_commit": null
+    },
+    "22-BOT-WHATSAPP": {
+      "applicability": "TO_DEFINE",
+      "state_file": "state/22-BOT-WHATSAPP.json",
+      "status": null,
+      "validation_commit": null
+    },
+    "23-INTEGRATIONS": {
+      "applicability": "TO_DEFINE",
+      "state_file": "state/23-INTEGRATIONS.json",
+      "status": null,
+      "validation_commit": null
+    },
+    "24-EMAIL-DNS": {
+      "applicability": "TO_DEFINE",
+      "state_file": "state/24-EMAIL-DNS.json",
+      "status": null,
+      "validation_commit": null
+    },
+    "25-PAYMENTS-ECOM": {
+      "applicability": "TO_DEFINE",
+      "state_file": "state/25-PAYMENTS-ECOM.json",
+      "status": null,
+      "validation_commit": null
+    },
+    "26-JOBS-CRON": {
+      "applicability": "TO_DEFINE",
+      "state_file": "state/26-JOBS-CRON.json",
+      "status": null,
+      "validation_commit": null
+    },
+    "27-COOKIE-CONSENT-PRIVACY": {
+      "applicability": "TO_DEFINE",
+      "state_file": "state/27-COOKIE-CONSENT-PRIVACY.json",
+      "status": null,
+      "validation_commit": null
+    },
+    "28-ATTRIBUTION-TRACKING": {
+      "applicability": "TO_DEFINE",
+      "state_file": "state/28-ATTRIBUTION-TRACKING.json",
+      "status": null,
+      "validation_commit": null
+    },
+    "29-SEO": {
+      "applicability": "TO_DEFINE",
+      "state_file": "state/29-SEO.json",
+      "status": null,
+      "validation_commit": null
+    },
+    "30-SEO-OPERATIONS": {
+      "applicability": "TO_DEFINE",
+      "state_file": "state/30-SEO-OPERATIONS.json",
+      "status": null,
+      "validation_commit": null
+    },
+    "31-ACCESSIBILITY": {
+      "applicability": "TO_DEFINE",
+      "state_file": "state/31-ACCESSIBILITY.json",
+      "status": null,
+      "validation_commit": null
+    },
+    "32-SECURITY-LEGAL": {
+      "applicability": "TO_DEFINE",
+      "state_file": "state/32-SECURITY-LEGAL.json",
+      "status": null,
+      "validation_commit": null
+    },
+    "33-DEPENDENCY-AUDIT": {
+      "applicability": "TO_DEFINE",
+      "state_file": "state/33-DEPENDENCY-AUDIT.json",
+      "status": null,
+      "validation_commit": null
+    },
+    "34-PERFORMANCE": {
+      "applicability": "TO_DEFINE",
+      "state_file": "state/34-PERFORMANCE.json",
+      "status": null,
+      "validation_commit": null
+    },
+    "35-ANALYTICS-MONITORING": {
+      "applicability": "TO_DEFINE",
+      "state_file": "state/35-ANALYTICS-MONITORING.json",
+      "status": null,
+      "validation_commit": null
+    },
+    "36-HEALTH-UPTIME": {
+      "applicability": "TO_DEFINE",
+      "state_file": "state/36-HEALTH-UPTIME.json",
+      "status": null,
+      "validation_commit": null
+    },
+    "37-RESPONSIVE": {
+      "applicability": "TO_DEFINE",
+      "state_file": "state/37-RESPONSIVE.json",
+      "status": null,
+      "validation_commit": null
+    },
+    "38-CROSS-BROWSER": {
+      "applicability": "TO_DEFINE",
+      "state_file": "state/38-CROSS-BROWSER.json",
+      "status": null,
+      "validation_commit": null
+    },
+    "39-VISUAL-REGRESSION": {
+      "applicability": "TO_DEFINE",
+      "state_file": "state/39-VISUAL-REGRESSION.json",
+      "status": null,
+      "validation_commit": null
+    },
+    "40-ERRORS-RESILIENCE": {
+      "applicability": "TO_DEFINE",
+      "state_file": "state/40-ERRORS-RESILIENCE.json",
+      "status": null,
+      "validation_commit": null
+    },
+    "41-CONTENT-GOVERNANCE": {
+      "applicability": "TO_DEFINE",
+      "state_file": "state/41-CONTENT-GOVERNANCE.json",
+      "status": null,
+      "validation_commit": null
+    },
+    "42-SUPPORT-CUSTOMER-SUCCESS": {
+      "applicability": "TO_DEFINE",
+      "state_file": "state/42-SUPPORT-CUSTOMER-SUCCESS.json",
+      "status": null,
+      "validation_commit": null
+    },
+    "43-PLACEHOLDERS-CLEANUP": {
+      "applicability": "TO_DEFINE",
+      "state_file": "state/43-PLACEHOLDERS-CLEANUP.json",
+      "status": null,
+      "validation_commit": null
+    },
+    "44-TESTING": {
+      "applicability": "TO_DEFINE",
+      "state_file": "state/44-TESTING.json",
+      "status": null,
+      "validation_commit": null
+    },
+    "45-CI-CD": {
+      "applicability": "TO_DEFINE",
+      "state_file": "state/45-CI-CD.json",
+      "status": null,
+      "validation_commit": null
+    },
+    "46-ENV-PARITY": {
+      "applicability": "TO_DEFINE",
+      "state_file": "state/46-ENV-PARITY.json",
+      "status": null,
+      "validation_commit": null
+    },
+    "47-STAGING-DEPLOY": {
+      "applicability": "TO_DEFINE",
+      "state_file": "state/47-STAGING-DEPLOY.json",
+      "status": null,
+      "validation_commit": null
+    },
+    "48-INCIDENT-RESPONSE": {
+      "applicability": "TO_DEFINE",
+      "state_file": "state/48-INCIDENT-RESPONSE.json",
+      "status": null,
+      "validation_commit": null
+    },
+    "49-RELEASE-VERSIONING-CHANGELOG": {
+      "applicability": "TO_DEFINE",
+      "state_file": "state/49-RELEASE-VERSIONING-CHANGELOG.json",
+      "status": null,
+      "validation_commit": null
+    },
+    "50-PWA-ICONS": {
+      "applicability": "TO_DEFINE",
+      "state_file": "state/50-PWA-ICONS.json",
+      "status": null,
+      "validation_commit": null
+    },
+    "51-README-DOCUMENTATION": {
+      "applicability": "TO_DEFINE",
+      "state_file": "state/51-README-DOCUMENTATION.json",
+      "status": null,
+      "validation_commit": null
+    },
+    "52-SOURCE-OF-TRUTH-LOCK": {
+      "applicability": "TO_DEFINE",
+      "state_file": "state/52-SOURCE-OF-TRUTH-LOCK.json",
+      "status": null,
+      "validation_commit": null
+    },
+    "53-FINAL-CLOSURE": {
+      "applicability": "TO_DEFINE",
+      "state_file": "state/53-FINAL-CLOSURE.json",
+      "status": null,
+      "validation_commit": null
+    }
+  },
+  "schema_version": "2.2"
+}

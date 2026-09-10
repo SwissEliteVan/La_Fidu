@@ -1,0 +1,31 @@
+{
+  "ai_roles": {
+    "declared_providers": {
+      "ia1": "claude",
+      "ia2": "deepseek",
+      "ia3": "claude",
+      "ia4": "deepseek"
+    },
+    "double_control": "required",
+    "independent_pairs": [
+      [
+        "ia1",
+        "ia2"
+      ],
+      [
+        "ia3",
+        "ia4"
+      ]
+    ]
+  },
+  "deployment": {
+    "allowed_external_services": [],
+    "external_services_policy": "deny",
+    "hosting_plan": null,
+    "hosting_target": "hostinger",
+    "media_hosting": "self_hosted"
+  },
+  "policy_profile": "PRODUCTION",
+  "project_profiles": [],
+  "schema_version": "2.2"
+}

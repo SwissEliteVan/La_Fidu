@@ -1,0 +1,1094 @@
+{
+  "branch_policy": "main-only",
+  "build_date_utc": "2026-09-08T07:46:46Z",
+  "build_id": "23f54886-7265-40f2-a7e3-551474010917",
+  "builder_sha256": "87215c8f0589c0ac20b49ea353908ea5c18388709ee7ad1e1bd7579f916d3c77",
+  "categories": [
+    {
+      "depends_on": [],
+      "execution_priority": 0,
+      "gate": "normal",
+      "project_profiles": [
+        "all"
+      ],
+      "reading_order": 0,
+      "slug": "00-START",
+      "title": "DÉMARRAGE / LECTURE MD"
+    },
+    {
+      "depends_on": [
+        "00-START"
+      ],
+      "execution_priority": 1,
+      "gate": "normal",
+      "project_profiles": [
+        "all"
+      ],
+      "reading_order": 1,
+      "slug": "01-PROJECT-PROFILE-APPLICABILITY",
+      "title": "PROFIL PROJET / APPLICABILITÉ"
+    },
+    {
+      "depends_on": [
+        "01-PROJECT-PROFILE-APPLICABILITY"
+      ],
+      "execution_priority": 2,
+      "gate": "normal",
+      "project_profiles": [
+        "all"
+      ],
+      "reading_order": 2,
+      "slug": "02-STACK",
+      "title": "STACK IDÉALE"
+    },
+    {
+      "depends_on": [
+        "02-STACK"
+      ],
+      "execution_priority": 3,
+      "gate": "normal",
+      "project_profiles": [
+        "all"
+      ],
+      "reading_order": 3,
+      "slug": "03-BOOTSTRAP",
+      "title": "BOOTSTRAP / SCAFFOLD"
+    },
+    {
+      "depends_on": [
+        "03-BOOTSTRAP"
+      ],
+      "execution_priority": 4,
+      "gate": "normal",
+      "project_profiles": [
+        "all"
+      ],
+      "reading_order": 4,
+      "slug": "04-ARCHITECTURE",
+      "title": "ARCHITECTURE"
+    },
+    {
+      "depends_on": [
+        "04-ARCHITECTURE"
+      ],
+      "execution_priority": 5,
+      "gate": "normal",
+      "project_profiles": [
+        "all"
+      ],
+      "reading_order": 5,
+      "slug": "05-DATA-BACKEND-AUTH",
+      "title": "DATA / BACKEND / AUTH"
+    },
+    {
+      "depends_on": [
+        "05-DATA-BACKEND-AUTH"
+      ],
+      "execution_priority": 6,
+      "gate": "normal",
+      "project_profiles": [
+        "saas"
+      ],
+      "reading_order": 6,
+      "slug": "06-SAAS-LIFECYCLE",
+      "title": "SAAS / LIFECYCLE"
+    },
+    {
+      "depends_on": [
+        "05-DATA-BACKEND-AUTH"
+      ],
+      "execution_priority": 7,
+      "gate": "normal",
+      "project_profiles": [
+        "ecommerce"
+      ],
+      "reading_order": 7,
+      "slug": "07-ECOMMERCE-LIFECYCLE",
+      "title": "E-COMMERCE / LIFECYCLE"
+    },
+    {
+      "depends_on": [
+        "05-DATA-BACKEND-AUTH"
+      ],
+      "execution_priority": 8,
+      "gate": "normal",
+      "project_profiles": [
+        "internal_app"
+      ],
+      "reading_order": 8,
+      "slug": "08-INTERNAL-APP-GOVERNANCE",
+      "title": "APPLICATION INTERNE / GOUVERNANCE"
+    },
+    {
+      "depends_on": [
+        "05-DATA-BACKEND-AUTH"
+      ],
+      "execution_priority": 9,
+      "gate": "normal",
+      "project_profiles": [
+        "api_backend"
+      ],
+      "reading_order": 9,
+      "slug": "09-API-BACKEND-GOVERNANCE",
+      "title": "API / BACKEND / GOUVERNANCE"
+    },
+    {
+      "depends_on": [
+        "05-DATA-BACKEND-AUTH"
+      ],
+      "execution_priority": 10,
+      "gate": "normal",
+      "project_profiles": [
+        "all"
+      ],
+      "reading_order": 10,
+      "slug": "10-BACKUP-RESTORE",
+      "title": "SAUVEGARDE / RESTAURATION"
+    },
+    {
+      "depends_on": [
+        "01-PROJECT-PROFILE-APPLICABILITY"
+      ],
+      "execution_priority": 11,
+      "gate": "normal",
+      "project_profiles": [
+        "all"
+      ],
+      "reading_order": 11,
+      "slug": "11-MARKETING-BRAND-DIFFERENTIATION",
+      "title": "MARKETING / DIFFÉRENCIATION DE MARQUE"
+    },
+    {
+      "depends_on": [
+        "11-MARKETING-BRAND-DIFFERENTIATION"
+      ],
+      "execution_priority": 12,
+      "gate": "normal",
+      "project_profiles": [
+        "all"
+      ],
+      "reading_order": 12,
+      "slug": "12-DESIGN-SYSTEM-BRAND",
+      "title": "DESIGN SYSTEM / IDENTITÉ VISUELLE"
+    },
+    {
+      "depends_on": [
+        "12-DESIGN-SYSTEM-BRAND"
+      ],
+      "execution_priority": 13,
+      "gate": "normal",
+      "project_profiles": [
+        "all"
+      ],
+      "reading_order": 13,
+      "slug": "13-DESIGN-NAVIGATION",
+      "title": "DESIGN / NAVIGATION"
+    },
+    {
+      "depends_on": [
+        "04-ARCHITECTURE"
+      ],
+      "execution_priority": 14,
+      "gate": "normal",
+      "project_profiles": [
+        "all"
+      ],
+      "reading_order": 14,
+      "slug": "14-MULTILINGUE",
+      "title": "MULTILINGUE / I18N"
+    },
+    {
+      "depends_on": [
+        "11-MARKETING-BRAND-DIFFERENTIATION"
+      ],
+      "execution_priority": 15,
+      "gate": "normal",
+      "project_profiles": [
+        "all"
+      ],
+      "reading_order": 15,
+      "slug": "15-COPYWRITING-PERSUASION",
+      "title": "COPYWRITING / PERSUASION / PREUVE"
+    },
+    {
+      "depends_on": [
+        "15-COPYWRITING-PERSUASION"
+      ],
+      "execution_priority": 16,
+      "gate": "normal",
+      "project_profiles": [
+        "all"
+      ],
+      "reading_order": 16,
+      "slug": "16-CONTENT-BLOG",
+      "title": "CONTENU / BLOG"
+    },
+    {
+      "depends_on": [
+        "12-DESIGN-SYSTEM-BRAND",
+        "16-CONTENT-BLOG"
+      ],
+      "execution_priority": 17,
+      "gate": "normal",
+      "project_profiles": [
+        "all"
+      ],
+      "reading_order": 17,
+      "slug": "17-MEDIA-HERO-IMAGES-BLOG",
+      "title": "MEDIA / HERO / IMAGES / BLOG"
+    },
+    {
+      "depends_on": [
+        "17-MEDIA-HERO-IMAGES-BLOG"
+      ],
+      "execution_priority": 18,
+      "gate": "normal",
+      "project_profiles": [
+        "all"
+      ],
+      "reading_order": 18,
+      "slug": "18-ASSET-LICENSES",
+      "title": "ASSETS / LICENCES"
+    },
+    {
+      "depends_on": [
+        "15-COPYWRITING-PERSUASION",
+        "13-DESIGN-NAVIGATION"
+      ],
+      "execution_priority": 19,
+      "gate": "normal",
+      "project_profiles": [
+        "all"
+      ],
+      "reading_order": 19,
+      "slug": "19-COMMERCIAL-FUNNEL-CONVERSION",
+      "title": "COMMERCIAL / FUNNEL / CONVERSION"
+    },
+    {
+      "depends_on": [
+        "19-COMMERCIAL-FUNNEL-CONVERSION"
+      ],
+      "execution_priority": 20,
+      "gate": "normal",
+      "project_profiles": [
+        "all"
+      ],
+      "reading_order": 20,
+      "slug": "20-CRM-LEAD-LIFECYCLE",
+      "title": "CRM / CYCLE DE VIE DU LEAD"
+    },
+    {
+      "depends_on": [
+        "19-COMMERCIAL-FUNNEL-CONVERSION"
+      ],
+      "execution_priority": 21,
+      "gate": "normal",
+      "project_profiles": [
+        "all"
+      ],
+      "reading_order": 21,
+      "slug": "21-POST-CONVERSION-RETENTION",
+      "title": "POST-CONVERSION / FIDÉLISATION"
+    },
+    {
+      "depends_on": [
+        "19-COMMERCIAL-FUNNEL-CONVERSION"
+      ],
+      "execution_priority": 22,
+      "gate": "normal",
+      "project_profiles": [
+        "all"
+      ],
+      "reading_order": 22,
+      "slug": "22-BOT-WHATSAPP",
+      "title": "BOT / WHATSAPP"
+    },
+    {
+      "depends_on": [
+        "04-ARCHITECTURE"
+      ],
+      "execution_priority": 23,
+      "gate": "normal",
+      "project_profiles": [
+        "all"
+      ],
+      "reading_order": 23,
+      "slug": "23-INTEGRATIONS",
+      "title": "INTÉGRATIONS EXTERNES"
+    },
+    {
+      "depends_on": [
+        "23-INTEGRATIONS"
+      ],
+      "execution_priority": 24,
+      "gate": "normal",
+      "project_profiles": [
+        "all"
+      ],
+      "reading_order": 24,
+      "slug": "24-EMAIL-DNS",
+      "title": "EMAIL / DNS"
+    },
+    {
+      "depends_on": [
+        "05-DATA-BACKEND-AUTH",
+        "23-INTEGRATIONS"
+      ],
+      "execution_priority": 25,
+      "gate": "normal",
+      "project_profiles": [
+        "all"
+      ],
+      "reading_order": 25,
+      "slug": "25-PAYMENTS-ECOM",
+      "title": "PAIEMENTS / E-COMMERCE"
+    },
+    {
+      "depends_on": [
+        "04-ARCHITECTURE"
+      ],
+      "execution_priority": 26,
+      "gate": "normal",
+      "project_profiles": [
+        "all"
+      ],
+      "reading_order": 26,
+      "slug": "26-JOBS-CRON",
+      "title": "JOBS / CRON"
+    },
+    {
+      "depends_on": [
+        "23-INTEGRATIONS"
+      ],
+      "execution_priority": 27,
+      "gate": "normal",
+      "project_profiles": [
+        "all"
+      ],
+      "reading_order": 27,
+      "slug": "27-COOKIE-CONSENT-PRIVACY",
+      "title": "COOKIES / CONSENTEMENT / PRIVACY UX"
+    },
+    {
+      "depends_on": [
+        "19-COMMERCIAL-FUNNEL-CONVERSION",
+        "27-COOKIE-CONSENT-PRIVACY"
+      ],
+      "execution_priority": 28,
+      "gate": "normal",
+      "project_profiles": [
+        "all"
+      ],
+      "reading_order": 28,
+      "slug": "28-ATTRIBUTION-TRACKING",
+      "title": "TRACKING COMMERCIAL / ATTRIBUTION"
+    },
+    {
+      "depends_on": [
+        "16-CONTENT-BLOG",
+        "17-MEDIA-HERO-IMAGES-BLOG"
+      ],
+      "execution_priority": 29,
+      "gate": "normal",
+      "project_profiles": [
+        "all"
+      ],
+      "reading_order": 29,
+      "slug": "29-SEO",
+      "title": "SEO TECHNIQUE / ON-PAGE"
+    },
+    {
+      "depends_on": [
+        "29-SEO"
+      ],
+      "execution_priority": 30,
+      "gate": "normal",
+      "project_profiles": [
+        "all"
+      ],
+      "reading_order": 30,
+      "slug": "30-SEO-OPERATIONS",
+      "title": "SEO OPÉRATIONNEL APRÈS MISE EN LIGNE"
+    },
+    {
+      "depends_on": [
+        "13-DESIGN-NAVIGATION",
+        "17-MEDIA-HERO-IMAGES-BLOG",
+        "27-COOKIE-CONSENT-PRIVACY"
+      ],
+      "execution_priority": 31,
+      "gate": "normal",
+      "project_profiles": [
+        "all"
+      ],
+      "reading_order": 31,
+      "slug": "31-ACCESSIBILITY",
+      "title": "ACCESSIBILITÉ"
+    },
+    {
+      "depends_on": [
+        "05-DATA-BACKEND-AUTH",
+        "27-COOKIE-CONSENT-PRIVACY"
+      ],
+      "execution_priority": 32,
+      "gate": "normal",
+      "project_profiles": [
+        "all"
+      ],
+      "reading_order": 32,
+      "slug": "32-SECURITY-LEGAL",
+      "title": "SÉCURITÉ / LÉGAL"
+    },
+    {
+      "depends_on": [
+        "02-STACK"
+      ],
+      "execution_priority": 33,
+      "gate": "normal",
+      "project_profiles": [
+        "all"
+      ],
+      "reading_order": 33,
+      "slug": "33-DEPENDENCY-AUDIT",
+      "title": "DÉPENDANCES / VULNÉRABILITÉS"
+    },
+    {
+      "depends_on": [
+        "17-MEDIA-HERO-IMAGES-BLOG",
+        "33-DEPENDENCY-AUDIT"
+      ],
+      "execution_priority": 34,
+      "gate": "normal",
+      "project_profiles": [
+        "all"
+      ],
+      "reading_order": 34,
+      "slug": "34-PERFORMANCE",
+      "title": "PERFORMANCE"
+    },
+    {
+      "depends_on": [
+        "27-COOKIE-CONSENT-PRIVACY",
+        "28-ATTRIBUTION-TRACKING"
+      ],
+      "execution_priority": 35,
+      "gate": "normal",
+      "project_profiles": [
+        "all"
+      ],
+      "reading_order": 35,
+      "slug": "35-ANALYTICS-MONITORING",
+      "title": "ANALYTICS / MONITORING"
+    },
+    {
+      "depends_on": [
+        "04-ARCHITECTURE"
+      ],
+      "execution_priority": 36,
+      "gate": "normal",
+      "project_profiles": [
+        "all"
+      ],
+      "reading_order": 36,
+      "slug": "36-HEALTH-UPTIME",
+      "title": "HEALTH CHECK / UPTIME"
+    },
+    {
+      "depends_on": [
+        "13-DESIGN-NAVIGATION",
+        "17-MEDIA-HERO-IMAGES-BLOG"
+      ],
+      "execution_priority": 37,
+      "gate": "normal",
+      "project_profiles": [
+        "all"
+      ],
+      "reading_order": 37,
+      "slug": "37-RESPONSIVE",
+      "title": "RESPONSIVE"
+    },
+    {
+      "depends_on": [
+        "37-RESPONSIVE"
+      ],
+      "execution_priority": 38,
+      "gate": "normal",
+      "project_profiles": [
+        "all"
+      ],
+      "reading_order": 38,
+      "slug": "38-CROSS-BROWSER",
+      "title": "CROSS-BROWSER"
+    },
+    {
+      "depends_on": [
+        "37-RESPONSIVE",
+        "12-DESIGN-SYSTEM-BRAND"
+      ],
+      "execution_priority": 39,
+      "gate": "normal",
+      "project_profiles": [
+        "all"
+      ],
+      "reading_order": 39,
+      "slug": "39-VISUAL-REGRESSION",
+      "title": "RÉGRESSION VISUELLE"
+    },
+    {
+      "depends_on": [
+        "04-ARCHITECTURE"
+      ],
+      "execution_priority": 40,
+      "gate": "normal",
+      "project_profiles": [
+        "all"
+      ],
+      "reading_order": 40,
+      "slug": "40-ERRORS-RESILIENCE",
+      "title": "ERREURS / RÉSILIENCE"
+    },
+    {
+      "depends_on": [
+        "16-CONTENT-BLOG"
+      ],
+      "execution_priority": 41,
+      "gate": "normal",
+      "project_profiles": [
+        "all"
+      ],
+      "reading_order": 41,
+      "slug": "41-CONTENT-GOVERNANCE",
+      "title": "CONTENT GOVERNANCE"
+    },
+    {
+      "depends_on": [
+        "21-POST-CONVERSION-RETENTION",
+        "40-ERRORS-RESILIENCE"
+      ],
+      "execution_priority": 42,
+      "gate": "normal",
+      "project_profiles": [
+        "all"
+      ],
+      "reading_order": 42,
+      "slug": "42-SUPPORT-CUSTOMER-SUCCESS",
+      "title": "SUPPORT / CUSTOMER SUCCESS"
+    },
+    {
+      "depends_on": [
+        "04-ARCHITECTURE"
+      ],
+      "execution_priority": 43,
+      "gate": "normal",
+      "project_profiles": [
+        "all"
+      ],
+      "reading_order": 43,
+      "slug": "43-PLACEHOLDERS-CLEANUP",
+      "title": "PLACEHOLDERS / TODO / NETTOYAGE"
+    },
+    {
+      "depends_on": [
+        "04-ARCHITECTURE"
+      ],
+      "execution_priority": 44,
+      "gate": "normal",
+      "project_profiles": [
+        "all"
+      ],
+      "reading_order": 44,
+      "slug": "44-TESTING",
+      "title": "TESTS / QA"
+    },
+    {
+      "depends_on": [
+        "44-TESTING"
+      ],
+      "execution_priority": 45,
+      "gate": "normal",
+      "project_profiles": [
+        "all"
+      ],
+      "reading_order": 45,
+      "slug": "45-CI-CD",
+      "title": "CI/CD"
+    },
+    {
+      "depends_on": [
+        "44-TESTING"
+      ],
+      "execution_priority": 46,
+      "gate": "normal",
+      "project_profiles": [
+        "all"
+      ],
+      "reading_order": 46,
+      "slug": "46-ENV-PARITY",
+      "title": "PARITÉ ENVIRONNEMENTS"
+    },
+    {
+      "depends_on": [
+        "44-TESTING",
+        "46-ENV-PARITY"
+      ],
+      "execution_priority": 47,
+      "gate": "normal",
+      "project_profiles": [
+        "all"
+      ],
+      "reading_order": 47,
+      "slug": "47-STAGING-DEPLOY",
+      "title": "STAGING / DÉPLOIEMENT"
+    },
+    {
+      "depends_on": [
+        "10-BACKUP-RESTORE",
+        "36-HEALTH-UPTIME",
+        "47-STAGING-DEPLOY"
+      ],
+      "execution_priority": 48,
+      "gate": "normal",
+      "project_profiles": [
+        "all"
+      ],
+      "reading_order": 48,
+      "slug": "48-INCIDENT-RESPONSE",
+      "title": "GESTION DES INCIDENTS"
+    },
+    {
+      "depends_on": [
+        "47-STAGING-DEPLOY"
+      ],
+      "execution_priority": 49,
+      "gate": "normal",
+      "project_profiles": [
+        "all"
+      ],
+      "reading_order": 49,
+      "slug": "49-RELEASE-VERSIONING-CHANGELOG",
+      "title": "RELEASE / VERSIONING / CHANGELOG"
+    },
+    {
+      "depends_on": [
+        "13-DESIGN-NAVIGATION"
+      ],
+      "execution_priority": 50,
+      "gate": "normal",
+      "project_profiles": [
+        "all"
+      ],
+      "reading_order": 50,
+      "slug": "50-PWA-ICONS",
+      "title": "PWA / ICÔNES OPTIONNELS"
+    },
+    {
+      "depends_on": [
+        "44-TESTING",
+        "47-STAGING-DEPLOY",
+        "49-RELEASE-VERSIONING-CHANGELOG"
+      ],
+      "execution_priority": 51,
+      "gate": "normal",
+      "project_profiles": [
+        "all"
+      ],
+      "reading_order": 51,
+      "slug": "51-README-DOCUMENTATION",
+      "title": "README / DOCUMENTATION PROJET"
+    },
+    {
+      "depends_on": [
+        "51-README-DOCUMENTATION"
+      ],
+      "execution_priority": 52,
+      "gate": "all_active_except_source_and_final_validated",
+      "project_profiles": [
+        "all"
+      ],
+      "reading_order": 52,
+      "slug": "52-SOURCE-OF-TRUTH-LOCK",
+      "title": "SOURCE OF TRUTH / VERROUILLAGE"
+    },
+    {
+      "depends_on": [
+        "52-SOURCE-OF-TRUTH-LOCK"
+      ],
+      "execution_priority": 53,
+      "gate": "all_other_active_validated",
+      "project_profiles": [
+        "all"
+      ],
+      "reading_order": 53,
+      "slug": "53-FINAL-CLOSURE",
+      "title": "CLÔTURE FINALE"
+    }
+  ],
+  "category_count": 54,
+  "features": {
+    "applicability_matrix": true,
+    "cycle_detection": true,
+    "dag_dependencies": true,
+    "delta_revalidation": true,
+    "dry_run_ia3": true,
+    "git_dirty_tree_stop": true,
+    "git_explicit_authorized_staging": true,
+    "git_remote_advance_stop": true,
+    "git_template_centralized": true,
+    "last_validation_preserved_during_revalidation": true,
+    "next_prompt_resolver": true,
+    "non_destructive_rollback": true,
+    "persistent_state_per_category": true,
+    "project_policy_profiles_separated": true,
+    "source_of_truth_lock": true,
+    "state_index": true,
+    "state_overview_markdown": true,
+    "strict_stage_outputs": true,
+    "vscode_workspace_self_read": true
+  },
+  "file_hashes": {
+    "AI-ROLES-RULES.md": "0a22cd9397db4d419213ac69378b752abfbaf668c33ae26b6b95fddc3750bfc0",
+    "COMMON-RULES.md": "f1bdc7ff53525778efc3b12e5e45f0299916693978a3469b31d919929832522c",
+    "DEPENDENCY-GRAPH.json": "bcb9f8e8f1f5c93861fd570ef054f6f70b0260cd0d369527c5c35c6568475a46",
+    "DEPLOYMENT-CONSTRAINTS.md": "9acdcb7fb8dfbe68c204dc90d563304aa6c7839522307ea65569dc5545ee2eb7",
+    "EXECUTION-MATRIX.md": "9de8530bc169a7d0779827eb120cf5791d8a72a66edd00a98767d2dd52e70f2d",
+    "FUNCTIONAL-VALIDATION.md": "16516ef44596456b3960b7537b9c7a59180a5c1bb0730f6159d52b209673c9ff",
+    "GLOSSARY.md": "01cfe2e3ce2e9fe1d87d71e856ddd2d1593159fb415d1adc2cfe0a97299e474f",
+    "MANIFEST-MISE-EN-PLACE-UTILISATION.md": "79b8d5a866bcc59da09d1f49b9fc6bd599cb40bb3b8dc7c6194361ff67a86cc5",
+    "NEXT-PROMPT-RULES.md": "2e90ddc692c53214582ed94b6357f29cdddaa212d02be9689c527257a980119f",
+    "ORDER.md": "3e77f89e861b039166a455a22a72866e8edf7e9706dd58f7d2a4cdeb41661139",
+    "POLICY-PROFILES.md": "0773aeb302e3458337d68fbafe351f93b7901bb8953f4480a085d82b42bb37bf",
+    "PROJECT-PROFILES.md": "774e7c3ff76135f189d5eae7089e80607bc1e94cda656f479ffbd043f11ec1bd",
+    "PROMPTS/00-START/1-IA1-ANALYSE.md": "3d2ad85ab3580f4533bb00ed35750cc0bf2f321696876be5bdd9bb2655ac3eee",
+    "PROMPTS/00-START/2-IA2-VERIFICATION.md": "ca96639ce50a8df2f0048ca5139336a59f2d6dbcbfaf171d06f1776f60d14c1d",
+    "PROMPTS/00-START/3-IA3-EXECUTION.md": "1be1ea9dfeb115beee031bf57134e5381d807f16eabb5ed858ec66691ad71757",
+    "PROMPTS/00-START/4-IA4-CONTROLE.md": "a24968ba574d542baa4dfa29eaee77353a7075be76953c400a53433dcb570252",
+    "PROMPTS/01-PROJECT-PROFILE-APPLICABILITY/1-IA1-ANALYSE.md": "fd6de0f5efba4f8dc0e876a623fc086f0a3a20b3a876482bd8a6309da19f70bf",
+    "PROMPTS/01-PROJECT-PROFILE-APPLICABILITY/2-IA2-VERIFICATION.md": "8abb729b5cf56b66c361a205392d122cd59b43e10890829e7e6ba292992ee2ca",
+    "PROMPTS/01-PROJECT-PROFILE-APPLICABILITY/3-IA3-EXECUTION.md": "b3fa1a922bb0963ce5464a3b6a0f8b0cff7fa9ac194e2bb2c2052d220ce9de23",
+    "PROMPTS/01-PROJECT-PROFILE-APPLICABILITY/4-IA4-CONTROLE.md": "3ed983a990d5c63cf75a04b726131c3b3b118d29d5eba64c2341c101eb4f585e",
+    "PROMPTS/02-STACK/1-IA1-ANALYSE.md": "a2c065582e30ef84b767bc0af070ce4fe6e3c10713dc05fb001cc59b2051ba22",
+    "PROMPTS/02-STACK/2-IA2-VERIFICATION.md": "121e33f20b6d3657c4a413faca2c205cbe233807dbef8bbf2ec892209e281503",
+    "PROMPTS/02-STACK/3-IA3-EXECUTION.md": "18a8b85160033dc4dcc57f898d59e07bbda19e551130f18bac2eecb67b85a656",
+    "PROMPTS/02-STACK/4-IA4-CONTROLE.md": "fa304cf316db02ae0753ff27cbaa2b80c6edd1d49d5e9a386acd9bc93659fbc9",
+    "PROMPTS/03-BOOTSTRAP/1-IA1-ANALYSE.md": "aaf47c27028d643d5ee70bac586820834c83549ec0652527ecad4960c44cf558",
+    "PROMPTS/03-BOOTSTRAP/2-IA2-VERIFICATION.md": "8a81556eb7055c10e8ebea28dbf4a9101d392c8542e5693024a6239e9fba7a08",
+    "PROMPTS/03-BOOTSTRAP/3-IA3-EXECUTION.md": "084e69bb684b77846f5f6ac42297225a321bacdf6a382ab3c054114e7f0ec0b2",
+    "PROMPTS/03-BOOTSTRAP/4-IA4-CONTROLE.md": "4583a6ab06ae404fa648145096946a6311fd18280a31dca1d55c8b7cdc32c4e7",
+    "PROMPTS/04-ARCHITECTURE/1-IA1-ANALYSE.md": "aa0cebdb5c701d5d5ce3961813e7a906fe80ecc2a04975790fa60810c8d4b9aa",
+    "PROMPTS/04-ARCHITECTURE/2-IA2-VERIFICATION.md": "4e39df758ef8b77e4835779efeed923e197d3fd5ad3bcc247850e687c572ae4d",
+    "PROMPTS/04-ARCHITECTURE/3-IA3-EXECUTION.md": "688f7d5c77553ba8732841d16a569e2cb9df240d9b4310446f4990d3a64d4663",
+    "PROMPTS/04-ARCHITECTURE/4-IA4-CONTROLE.md": "ba56161ff1225483ca50b4770eda8b71a343618816494d13eeb349b06ef80bef",
+    "PROMPTS/05-DATA-BACKEND-AUTH/1-IA1-ANALYSE.md": "948d58998b68cc506f6e062ab1a58b5f08222738e621781fc7dc3817d9a4b077",
+    "PROMPTS/05-DATA-BACKEND-AUTH/2-IA2-VERIFICATION.md": "4603d2cd95aeb974ce26f8eafaddfdea2bfa8f62e6f35856725cd3780c94d758",
+    "PROMPTS/05-DATA-BACKEND-AUTH/3-IA3-EXECUTION.md": "680a12d3acc666930911fd1a680dc7269164f12907e11a550f824ac4fb3776df",
+    "PROMPTS/05-DATA-BACKEND-AUTH/4-IA4-CONTROLE.md": "d81ef8a0480a617f1574df51387a4db4c79e41955f1e2335e56531de4ee39555",
+    "PROMPTS/06-SAAS-LIFECYCLE/1-IA1-ANALYSE.md": "7a4cc3c580872cdc7246f95cd7359e04f4bca6202a86637891de0487acc68b33",
+    "PROMPTS/06-SAAS-LIFECYCLE/2-IA2-VERIFICATION.md": "5f305144fc870a1544fa75c9e402c55fa4c37f5ffa2804cfc7cb74753d67f12b",
+    "PROMPTS/06-SAAS-LIFECYCLE/3-IA3-EXECUTION.md": "44bf898fd6b0a401f4b2b618174f22ee427a74c0ba4c191a6ff6451bb3644eb0",
+    "PROMPTS/06-SAAS-LIFECYCLE/4-IA4-CONTROLE.md": "604d659eaf2cc096ca32657fbd3e5c708d4f8a3d698be5d2601826eb758413a5",
+    "PROMPTS/07-ECOMMERCE-LIFECYCLE/1-IA1-ANALYSE.md": "8244f472e6129784838026056c0cee2084c1f97afde315275da96b3e15c31baf",
+    "PROMPTS/07-ECOMMERCE-LIFECYCLE/2-IA2-VERIFICATION.md": "f4ad2f9be0e529335b3a240fb723b869a7c691ae195194f26bc71a0be13fd4f9",
+    "PROMPTS/07-ECOMMERCE-LIFECYCLE/3-IA3-EXECUTION.md": "bdf91f27ebb8513515f9817af37d6e7d32a5276f94b41ff7e2954921c6cfada8",
+    "PROMPTS/07-ECOMMERCE-LIFECYCLE/4-IA4-CONTROLE.md": "7c35f95847f8557b622c158d8589cecf61fe5660a6e97216004aa4bf91b27c16",
+    "PROMPTS/08-INTERNAL-APP-GOVERNANCE/1-IA1-ANALYSE.md": "00d54b7daec826d1ffe8f645f2db16e734cc134aebfcfeb174fe156a7e152772",
+    "PROMPTS/08-INTERNAL-APP-GOVERNANCE/2-IA2-VERIFICATION.md": "e0d3a2689504e5250d70cd32928b84a574a0c0ca64cd0e96c5251d634dac8753",
+    "PROMPTS/08-INTERNAL-APP-GOVERNANCE/3-IA3-EXECUTION.md": "3b6fd409ae9b475a2f5b33bdab1fa4186cd493d410bd412e5bd5f6d9c720fc57",
+    "PROMPTS/08-INTERNAL-APP-GOVERNANCE/4-IA4-CONTROLE.md": "7c188f76b8304d187e571efd1c4456d4945afaa1fbd2bba4e5c8f62be49ee14a",
+    "PROMPTS/09-API-BACKEND-GOVERNANCE/1-IA1-ANALYSE.md": "7b0539ce3766f021505a458c9ffbc403f2827e2813b24657ae150d5e898861e3",
+    "PROMPTS/09-API-BACKEND-GOVERNANCE/2-IA2-VERIFICATION.md": "08852b7bd0f429b965187353761070269c63ceb18439c7f8829183359f16eb70",
+    "PROMPTS/09-API-BACKEND-GOVERNANCE/3-IA3-EXECUTION.md": "589dde2e02b980bf77efb719417ba92ad376b967cb8f7a117b480fc7084f766b",
+    "PROMPTS/09-API-BACKEND-GOVERNANCE/4-IA4-CONTROLE.md": "7b7c10f2caf136410acc0913f62e81c0b04ca74491fcd22b0c864e74eea8caef",
+    "PROMPTS/10-BACKUP-RESTORE/1-IA1-ANALYSE.md": "01ce42a42b7a283ddcd64da1599b0da7c00e4260bd6f51fb42a587fda93f91a1",
+    "PROMPTS/10-BACKUP-RESTORE/2-IA2-VERIFICATION.md": "8233d5a5f4acab827445c29bcf487b5e81943666bdf2b6dd19359ec042800c7b",
+    "PROMPTS/10-BACKUP-RESTORE/3-IA3-EXECUTION.md": "74742574ea3ca99bc3c0610e1bdf7ed39db05d8aa0af4c45db33304de8ed05f9",
+    "PROMPTS/10-BACKUP-RESTORE/4-IA4-CONTROLE.md": "bdc58c7037f62502740db4b01ff60362b3f7bf04f175422f31635c6ce291a41e",
+    "PROMPTS/11-MARKETING-BRAND-DIFFERENTIATION/1-IA1-ANALYSE.md": "991a7ee892f8ec29f1ab61983bc2431de3792f50eca05ae34ecbb41f7b75fea9",
+    "PROMPTS/11-MARKETING-BRAND-DIFFERENTIATION/2-IA2-VERIFICATION.md": "fc679eb5ca059cf734a70ac3db82e33fc233e8370fa3955a9f309f2bec147927",
+    "PROMPTS/11-MARKETING-BRAND-DIFFERENTIATION/3-IA3-EXECUTION.md": "e434cf57a5d089168e5a8559f09020459b6691c41d6871e413649e7b4f39d2bc",
+    "PROMPTS/11-MARKETING-BRAND-DIFFERENTIATION/4-IA4-CONTROLE.md": "5f42473c7f6935ed5cf6468f0a74982e55fef382d700476f225956a6fdece02d",
+    "PROMPTS/12-DESIGN-SYSTEM-BRAND/1-IA1-ANALYSE.md": "f4f0cb9ba96cfdfa0243a0d0f553d1e971632c954904949ea9e5ad4811248761",
+    "PROMPTS/12-DESIGN-SYSTEM-BRAND/2-IA2-VERIFICATION.md": "a182cf6f4a662ea6cba5e4dd088c46839ab98e5774abac14ca11ed3687a96dab",
+    "PROMPTS/12-DESIGN-SYSTEM-BRAND/3-IA3-EXECUTION.md": "d0748e3e660455efa687c34d1957d6097a8bb479042ffb6d108c849b911f2244",
+    "PROMPTS/12-DESIGN-SYSTEM-BRAND/4-IA4-CONTROLE.md": "1b70125205227e88f94d6d316549acac96f4d3aa4e5ad3df82bb7f025aa70619",
+    "PROMPTS/13-DESIGN-NAVIGATION/1-IA1-ANALYSE.md": "a714305848b2518885f2d851efc93ab8f66dc0f8af2139b2e15709b1c13b34a7",
+    "PROMPTS/13-DESIGN-NAVIGATION/2-IA2-VERIFICATION.md": "25842d60f85d5cbdfbf71bf57648fd6e014ea9c3f58101fec3d74d39f77ac8a1",
+    "PROMPTS/13-DESIGN-NAVIGATION/3-IA3-EXECUTION.md": "bee7e610b38c51bcb76b45c186c91362a5eb2a6d8980117c7a9804d908fdd67c",
+    "PROMPTS/13-DESIGN-NAVIGATION/4-IA4-CONTROLE.md": "e89930541117d9d7cc0ff99e4ce4f2459e31ab7e8f9b1bd0ad3f653ba73e3bd5",
+    "PROMPTS/14-MULTILINGUE/1-IA1-ANALYSE.md": "ca31c67f05b44080f1c2588644dddc52ddc7c686ad4e2f5119a19e62718b0d7c",
+    "PROMPTS/14-MULTILINGUE/2-IA2-VERIFICATION.md": "249547e444212fc2dd331886ccdeaa3924b0260f0647fa7695207a7fbc4a0511",
+    "PROMPTS/14-MULTILINGUE/3-IA3-EXECUTION.md": "aacc034914fc9382779720ad1c7800e65caaff669d9aff14d1fde126277a64d9",
+    "PROMPTS/14-MULTILINGUE/4-IA4-CONTROLE.md": "a377954c79e5ff81bdb5b9c17f7bebedccab137eea6980e2c9a71210aacfa03b",
+    "PROMPTS/15-COPYWRITING-PERSUASION/1-IA1-ANALYSE.md": "d3d806ed2d3a993b56928d64e975d9532d71af0f7ff9e5e8d7b344a3cbb57809",
+    "PROMPTS/15-COPYWRITING-PERSUASION/2-IA2-VERIFICATION.md": "7a7a436d1ac2d3c0c2c441564f5bf561ed233df058ef3e01ccdd09e3a2bf74c4",
+    "PROMPTS/15-COPYWRITING-PERSUASION/3-IA3-EXECUTION.md": "14f5744573cbc3bf05926b314e7308a1ce4a314fd659b1891622c68b1659640a",
+    "PROMPTS/15-COPYWRITING-PERSUASION/4-IA4-CONTROLE.md": "34b77926c71cd33eea4827d86796eefe499aaf4d0f2d644fd328982955d36656",
+    "PROMPTS/16-CONTENT-BLOG/1-IA1-ANALYSE.md": "a03ad80034bcc7c9a0a55839cfc9fc3bf1dcb3484f2be34e59b5d3d87dc719d7",
+    "PROMPTS/16-CONTENT-BLOG/2-IA2-VERIFICATION.md": "a0cd9c2928dbcbe5db75e0edc6d518d05bb2f9b95a5a097d4227b188303ee72a",
+    "PROMPTS/16-CONTENT-BLOG/3-IA3-EXECUTION.md": "0c06104072aded96f9bd015c5318ccff843c0f1e1ca22d2165c0ca264b56e363",
+    "PROMPTS/16-CONTENT-BLOG/4-IA4-CONTROLE.md": "e26299a61535edbf5dc58525b532d212a34627c8c08b789c45f06f9de84d5419",
+    "PROMPTS/17-MEDIA-HERO-IMAGES-BLOG/1-IA1-ANALYSE.md": "0c8b2db897ab328caf8e4cc1ef822bac66b6fb9de095d4c6300d4f7b8edc79c5",
+    "PROMPTS/17-MEDIA-HERO-IMAGES-BLOG/2-IA2-VERIFICATION.md": "373ae93e2c0ae6cc4097260fae1d8791e81c9e499a74274e7cfaae354408f0a5",
+    "PROMPTS/17-MEDIA-HERO-IMAGES-BLOG/3-IA3-EXECUTION.md": "08837a644e51d530f72d606182ae3a0943359b749aa3cd3a0f78fe3994e16bfe",
+    "PROMPTS/17-MEDIA-HERO-IMAGES-BLOG/4-IA4-CONTROLE.md": "138e1dd6e28b9f7a884084d3e5f3b44515179d83cf47a189903bdbfaa552c65b",
+    "PROMPTS/18-ASSET-LICENSES/1-IA1-ANALYSE.md": "63bc66466dbb4280ffa26d802938c1f4841431919e96812226e24feea5a0399c",
+    "PROMPTS/18-ASSET-LICENSES/2-IA2-VERIFICATION.md": "d7e2a1c74de36f4511c6252ac767acd432259e75f6adf6e73114e71fc447809d",
+    "PROMPTS/18-ASSET-LICENSES/3-IA3-EXECUTION.md": "27b586fc9ea13bbf70847c158f80c2d36f040740d1ab7eeac4f8b6ab2129b1d6",
+    "PROMPTS/18-ASSET-LICENSES/4-IA4-CONTROLE.md": "9c7fe2131449123c0d37f52f65311a0cc44e1166998d22e838038c5c12be065a",
+    "PROMPTS/19-COMMERCIAL-FUNNEL-CONVERSION/1-IA1-ANALYSE.md": "a30986a0b1beeac1e38bbac8e11678da723c7bed4c2807d3f2c900569f1f7e8b",
+    "PROMPTS/19-COMMERCIAL-FUNNEL-CONVERSION/2-IA2-VERIFICATION.md": "fc98d90e2d6518c1cf3b9908f30fe85376bc92df37eb4cfd04a940f2c12f7768",
+    "PROMPTS/19-COMMERCIAL-FUNNEL-CONVERSION/3-IA3-EXECUTION.md": "a0ca6873fd102a9828068c8be5a78a193671384bde504e2a89e223d390c65f95",
+    "PROMPTS/19-COMMERCIAL-FUNNEL-CONVERSION/4-IA4-CONTROLE.md": "13220284027445fa65edbe991d670c6dbb7c8509f9f40fa5a86fb19ba895d634",
+    "PROMPTS/20-CRM-LEAD-LIFECYCLE/1-IA1-ANALYSE.md": "780888071fe7ad25a387d4a6d0863dbe3e1b47548bc10615ef1bc90c05cad612",
+    "PROMPTS/20-CRM-LEAD-LIFECYCLE/2-IA2-VERIFICATION.md": "f68ca65bf943f23bc61becd40d0b647ca628c0ad408fcad33108b7e0a07eb2c3",
+    "PROMPTS/20-CRM-LEAD-LIFECYCLE/3-IA3-EXECUTION.md": "9c3c0ff1d11b812e089bdb3174d82dec9bb56decbc73d63eae0e0d9efd53eb1b",
+    "PROMPTS/20-CRM-LEAD-LIFECYCLE/4-IA4-CONTROLE.md": "4e9feffdc55c73178e648f66c281a6230654c1d8967f7ae164354068cf81c147",
+    "PROMPTS/21-POST-CONVERSION-RETENTION/1-IA1-ANALYSE.md": "282e14fb7828a1edee4e41d36d881161f1979ae4c57816ddc0aa5a0276bc1263",
+    "PROMPTS/21-POST-CONVERSION-RETENTION/2-IA2-VERIFICATION.md": "7b5b60fbef0489be415cfc910c06113bd9c9c5f001c5dd95f69abfac5e6a27f3",
+    "PROMPTS/21-POST-CONVERSION-RETENTION/3-IA3-EXECUTION.md": "8871c967891297918622d3c9b689b9879e9e811298bb4c639788ea6cb99366be",
+    "PROMPTS/21-POST-CONVERSION-RETENTION/4-IA4-CONTROLE.md": "c2f1a0ddf1d5b8c24b96da7abd3a5d8a7ef87026fea15d4ac209d3312cc1368c",
+    "PROMPTS/22-BOT-WHATSAPP/1-IA1-ANALYSE.md": "58d39c9a8cb7444546cfc63a9058c294c1f0516ef9a04f4521c7b8df2243f500",
+    "PROMPTS/22-BOT-WHATSAPP/2-IA2-VERIFICATION.md": "ba2e4f749aa2f81edee6098e2119457d80289377de243ce66eb7265da1150590",
+    "PROMPTS/22-BOT-WHATSAPP/3-IA3-EXECUTION.md": "7dbcf6b93faaf9ab691f0d8299d76d974279f7ce4b918eaf0c9d5c962f719dc4",
+    "PROMPTS/22-BOT-WHATSAPP/4-IA4-CONTROLE.md": "5839f3910b9cb40fdd2259bc31235d564e8fc8e87c3c4461cbb44267255825ad",
+    "PROMPTS/23-INTEGRATIONS/1-IA1-ANALYSE.md": "74ba48597a3dab4140d0df82ccdc7b3ce30218379082713be8ee1ee6b51d4e99",
+    "PROMPTS/23-INTEGRATIONS/2-IA2-VERIFICATION.md": "e1cac52fa91cfccc5d2dedad6965b033972c592a77c5b2197fa64dcdde6ebb81",
+    "PROMPTS/23-INTEGRATIONS/3-IA3-EXECUTION.md": "fee2709e020d3a5b3bcc7a2eb56bd04d47ff2006ab09080000180ed7f9800a97",
+    "PROMPTS/23-INTEGRATIONS/4-IA4-CONTROLE.md": "2994554565b3bf5d2ea2b3219639ea75f2e7757ca23388dd32e83457f14255e9",
+    "PROMPTS/24-EMAIL-DNS/1-IA1-ANALYSE.md": "b3838a22b5991341793914ab5df0442b6652c7f970002d7e9c6da1df405403f5",
+    "PROMPTS/24-EMAIL-DNS/2-IA2-VERIFICATION.md": "a0e85b90ef18847f18aa54843be1aaa830a23162af4d38e0c2868adb764693ea",
+    "PROMPTS/24-EMAIL-DNS/3-IA3-EXECUTION.md": "612d954f690caf751d7bb983925707b22d4ea66f69b4d59eac0e4cf2cb14886f",
+    "PROMPTS/24-EMAIL-DNS/4-IA4-CONTROLE.md": "d175cd5723194a08b37c78230c8882280f098ef87d996878b783210d81cd4128",
+    "PROMPTS/25-PAYMENTS-ECOM/1-IA1-ANALYSE.md": "70b3c69cd5ad99965eaa21265ac2637d149a46c94db8881d6db43cef5b88f5a8",
+    "PROMPTS/25-PAYMENTS-ECOM/2-IA2-VERIFICATION.md": "a96ed41b6bcfc8ac61556d820f7c2086766469063ded8b35abe62ad5a598d58c",
+    "PROMPTS/25-PAYMENTS-ECOM/3-IA3-EXECUTION.md": "255d023affa9302ae3d54232004ce41fe528b28a4a783f6bfd2641aa938c7261",
+    "PROMPTS/25-PAYMENTS-ECOM/4-IA4-CONTROLE.md": "210158574aa62148bea9dde83245d0429d2d234f785b586098e42cff6c89a836",
+    "PROMPTS/26-JOBS-CRON/1-IA1-ANALYSE.md": "a40960364e5ef1e8bf1cd03edf03b6a5c7008b0636a047e5fda36f0ce91e0bd1",
+    "PROMPTS/26-JOBS-CRON/2-IA2-VERIFICATION.md": "74f468760e8eea993ef4f5e861892d789a7a8af381e115c4ce883bdaceb5df05",
+    "PROMPTS/26-JOBS-CRON/3-IA3-EXECUTION.md": "372f4db131079388179b4d796b72bf4bf31085054c138986164fe66905415214",
+    "PROMPTS/26-JOBS-CRON/4-IA4-CONTROLE.md": "cb5f925067868b0c4564eed92015b1e14cc9aef38310e14f1381b94e8eaa4487",
+    "PROMPTS/27-COOKIE-CONSENT-PRIVACY/1-IA1-ANALYSE.md": "95fcc8dc8b8303789587b8a1cc7ac9cb6642444bd88dc1ce740519ec7c409719",
+    "PROMPTS/27-COOKIE-CONSENT-PRIVACY/2-IA2-VERIFICATION.md": "5f4ec30729318235cc359616b6cbb1dd438a371be48253ea22c4005abc138c3b",
+    "PROMPTS/27-COOKIE-CONSENT-PRIVACY/3-IA3-EXECUTION.md": "95c6db0fa7b785b142ec0329fd4d9dd3969c03cc8e5845a7648c6748606f9547",
+    "PROMPTS/27-COOKIE-CONSENT-PRIVACY/4-IA4-CONTROLE.md": "dc138ae77439676bce4a194b39f30c265c8eff7efc1f702ede3c55f64fc99b75",
+    "PROMPTS/28-ATTRIBUTION-TRACKING/1-IA1-ANALYSE.md": "faaf539fb17e385bf690ba612737670d2c76376843556c7832bdbff707f0a66c",
+    "PROMPTS/28-ATTRIBUTION-TRACKING/2-IA2-VERIFICATION.md": "ff524d8681bbc5c64c65b5d33ac76cbe839d9a31b93bb2806a4c14d315d50ffd",
+    "PROMPTS/28-ATTRIBUTION-TRACKING/3-IA3-EXECUTION.md": "d272747557940683fa981e98f3265a32c05dc5b4cc9939919134dea5a8cd860c",
+    "PROMPTS/28-ATTRIBUTION-TRACKING/4-IA4-CONTROLE.md": "8cbf611e81d6aae4b518a8b78af72eecb4dab0bf797a86a6fc80275eb0671306",
+    "PROMPTS/29-SEO/1-IA1-ANALYSE.md": "50c31e3b2174f6f042e25003143fb8d29f2e0586399201929419d7afbe8752ba",
+    "PROMPTS/29-SEO/2-IA2-VERIFICATION.md": "32857431b8ce3d9bc5c72c0481b870b688949add60079e58bed61c5ffa80b887",
+    "PROMPTS/29-SEO/3-IA3-EXECUTION.md": "3c744c5c42449aed75cfe1acbf1d314f1e0662ccb5a4c9ba90d487ded147ea45",
+    "PROMPTS/29-SEO/4-IA4-CONTROLE.md": "75fb1d89008f3f988f2bccad125c4e6f29835d3cbd9ca6f9a4e229a01e5d7cad",
+    "PROMPTS/30-SEO-OPERATIONS/1-IA1-ANALYSE.md": "71c49bdac9d396103cec0314ec19f639e3cbddc68b6f327788fdb3092c51435e",
+    "PROMPTS/30-SEO-OPERATIONS/2-IA2-VERIFICATION.md": "3568cf5098c347a4df26de823d1b00ba1e07869f781721af628ae4e57949eb16",
+    "PROMPTS/30-SEO-OPERATIONS/3-IA3-EXECUTION.md": "3d6a94e6e58feb4ff982d0e01f56bf32eec6463d2cfa9d51f953a96c57fb9d56",
+    "PROMPTS/30-SEO-OPERATIONS/4-IA4-CONTROLE.md": "7164945758770ad9c02c1789e2d4d28253b3c5fdae3724ed8281244e68b82fd0",
+    "PROMPTS/31-ACCESSIBILITY/1-IA1-ANALYSE.md": "4c86cae56909493bdb411c125415e2f9d7ef5317dcef8b17e6f720ce2723052d",
+    "PROMPTS/31-ACCESSIBILITY/2-IA2-VERIFICATION.md": "a4d8ef3c7f5bfcb68b34c150da377a83a18876fb7895bda4f88edb1e64978d77",
+    "PROMPTS/31-ACCESSIBILITY/3-IA3-EXECUTION.md": "cee569c5d394fe1c94a6255837f697b1c46677521dfaf0675630b33d963ab237",
+    "PROMPTS/31-ACCESSIBILITY/4-IA4-CONTROLE.md": "b74f4aace002e9fa7d2f66dafa37d994e30e6e0819c67937ef5c06be3d13c046",
+    "PROMPTS/32-SECURITY-LEGAL/1-IA1-ANALYSE.md": "a83488ca2f8acc112ff409bf5a313cf4fc5b9cf20e13b71db4e4b2f0c200b5e4",
+    "PROMPTS/32-SECURITY-LEGAL/2-IA2-VERIFICATION.md": "f9971d62ebe1b2f0cebf43c4d49b13c299e4d70872440d429439b2ffcd7ca0a3",
+    "PROMPTS/32-SECURITY-LEGAL/3-IA3-EXECUTION.md": "a81491d893e3c5638831402e3e141aa514ed2354791fee57415f2e025c0620ff",
+    "PROMPTS/32-SECURITY-LEGAL/4-IA4-CONTROLE.md": "7f5100bb60227a0efca79e02520f1a5fcb7d303d767bcd0add06d27103226b44",
+    "PROMPTS/33-DEPENDENCY-AUDIT/1-IA1-ANALYSE.md": "7ec2fa203b3e3fafebbad14a1c3407c961a798494c7c8959b401ae099b8604a2",
+    "PROMPTS/33-DEPENDENCY-AUDIT/2-IA2-VERIFICATION.md": "19e0405345a79ddde3985ee0b28bdeb20335829d30ca8838d58869e1a6d4f3cf",
+    "PROMPTS/33-DEPENDENCY-AUDIT/3-IA3-EXECUTION.md": "36dea9baf419964529440690182ed7793dd42c2ba335492294785274331d6d29",
+    "PROMPTS/33-DEPENDENCY-AUDIT/4-IA4-CONTROLE.md": "04576e01333cc6569c4d74fc28b51f58fd376136c7c7a857a57b383fda45273a",
+    "PROMPTS/34-PERFORMANCE/1-IA1-ANALYSE.md": "92d35b7ec191312dc36bdd454bae58ae745f2114a91dd12c4caf8e9c993b3bb7",
+    "PROMPTS/34-PERFORMANCE/2-IA2-VERIFICATION.md": "23188c30fa138ccab07bb6684dd4eb639d8a03cdfbaa0296b34366ff33968db8",
+    "PROMPTS/34-PERFORMANCE/3-IA3-EXECUTION.md": "abc9ab95aefcf1cb99e3702ed60106b63731844986294c8f9c61fc078029b90a",
+    "PROMPTS/34-PERFORMANCE/4-IA4-CONTROLE.md": "72333dd807a4bb859780e8791999bef8bb6c146ca708ea657c52a50a59c491c1",
+    "PROMPTS/35-ANALYTICS-MONITORING/1-IA1-ANALYSE.md": "4ae648296f27e0ea0941a787df8dfcb3db8a9537f55c7101b087b0acfe979fcd",
+    "PROMPTS/35-ANALYTICS-MONITORING/2-IA2-VERIFICATION.md": "a4075d0f5a524346df9f81eeacb05c15b28f416d9864332645b49bb4bedcdcac",
+    "PROMPTS/35-ANALYTICS-MONITORING/3-IA3-EXECUTION.md": "44c5ccdce93815f7ae7977a12111eec9a2eb2e90af81400a2b226bf9f6f1c4f5",
+    "PROMPTS/35-ANALYTICS-MONITORING/4-IA4-CONTROLE.md": "fbe969e09bbede631e630e44a4465c4fcefd09866dc647186e620926c1fd6a3a",
+    "PROMPTS/36-HEALTH-UPTIME/1-IA1-ANALYSE.md": "3cd82fcafeebe9844e54c5da6d5bd0c2cc8b0ed41ea2f23e38d4d5ade576a4dd",
+    "PROMPTS/36-HEALTH-UPTIME/2-IA2-VERIFICATION.md": "07c81d50ffa2a1608aaf95e483c732c3dd1ac5f9107d84defdbf7b154db21c93",
+    "PROMPTS/36-HEALTH-UPTIME/3-IA3-EXECUTION.md": "f6fba0ab632f9a14ba2ac36e99f35b6d3746ecdcd1ef49fcd18b1bc2e07e0db7",
+    "PROMPTS/36-HEALTH-UPTIME/4-IA4-CONTROLE.md": "3f35fbac45288c7c20b3c17873aa8b01f37ad29898f644185d89b6b0e9813ba1",
+    "PROMPTS/37-RESPONSIVE/1-IA1-ANALYSE.md": "39aae16aceb16fd069dd0cc7a74252e3b23b45c8602de16344be07bbed0dc07e",
+    "PROMPTS/37-RESPONSIVE/2-IA2-VERIFICATION.md": "87f1c9222b735afd118ed64279f22894729bcab24a99b28dbce9fa6ebecf3a3b",
+    "PROMPTS/37-RESPONSIVE/3-IA3-EXECUTION.md": "5e799d9d6773f19ffda63a7b69054591a2eb1e0b8dc896ca2d112ac8463c5bf6",
+    "PROMPTS/37-RESPONSIVE/4-IA4-CONTROLE.md": "56d4a4a0ac0f0e15a171977f86a130b3e3d3ffb864d07071be232e17f5b6d947",
+    "PROMPTS/38-CROSS-BROWSER/1-IA1-ANALYSE.md": "c9109ee5eb7ec621bde168f6ea6fe10cfe582e7a42ed1e0adf32060976814ead",
+    "PROMPTS/38-CROSS-BROWSER/2-IA2-VERIFICATION.md": "cace8862ce15eab2570ee4e0b4133460f582a3e725edebca18fa8c5ede03850d",
+    "PROMPTS/38-CROSS-BROWSER/3-IA3-EXECUTION.md": "5fb0e40dbc516bcf0736facf78fa9bd82ca271433b34119574cc1c3565ee7fe0",
+    "PROMPTS/38-CROSS-BROWSER/4-IA4-CONTROLE.md": "d8513dc21e6039270e96b4f2c2716963a52b4cc914407e921e184ac4a563e036",
+    "PROMPTS/39-VISUAL-REGRESSION/1-IA1-ANALYSE.md": "ced7e68847f819d6ac74ce92be1165b0b433a6ed7c1f6a7d87ed7af8d7a7af36",
+    "PROMPTS/39-VISUAL-REGRESSION/2-IA2-VERIFICATION.md": "8254ac2c7e1925a7b1c2914c7ae3823c890feb77f59026944f46284e7b11dd46",
+    "PROMPTS/39-VISUAL-REGRESSION/3-IA3-EXECUTION.md": "a17e17d37c66e575048335b637f744c87d3c7ae27a862b77aeb66e7bb2e3130d",
+    "PROMPTS/39-VISUAL-REGRESSION/4-IA4-CONTROLE.md": "b1387f4c5eb480f5335cb1227dbe7c2ef31831dffb54848fbad5e791c179ede9",
+    "PROMPTS/40-ERRORS-RESILIENCE/1-IA1-ANALYSE.md": "9dbb108297a37477f2c106feee2981e83ef43d8001ae7f914b6c9133706007d9",
+    "PROMPTS/40-ERRORS-RESILIENCE/2-IA2-VERIFICATION.md": "c693b6469ba77d93a0ea9098a009ddeffe5837d2be0eeb3ea6a956d05723f474",
+    "PROMPTS/40-ERRORS-RESILIENCE/3-IA3-EXECUTION.md": "aa180dc5852dedceb185351fd3d1d7655773c6ab61a5c8925a680f6c4e26030b",
+    "PROMPTS/40-ERRORS-RESILIENCE/4-IA4-CONTROLE.md": "3fb4df59063d46981abfe66fb8e3f2986a0bb59dbac2e2ed5255bd3a8ffb1343",
+    "PROMPTS/41-CONTENT-GOVERNANCE/1-IA1-ANALYSE.md": "64e388deab2a9bc9b498c465136314f63af43b25bcaf0adda4c3b0409ed0ad4f",
+    "PROMPTS/41-CONTENT-GOVERNANCE/2-IA2-VERIFICATION.md": "72535b3914427b5280efc72a1fbfd7448551c6c07079274456280e13dea938d5",
+    "PROMPTS/41-CONTENT-GOVERNANCE/3-IA3-EXECUTION.md": "cb4cd7ce905c90c23f9820f47f40f03d12b5e5afd016e1fb2162fba1a9895986",
+    "PROMPTS/41-CONTENT-GOVERNANCE/4-IA4-CONTROLE.md": "7d16a5b17dafd4257478cb79443e13ab5c52595ed147a846e7055a5a7c967edc",
+    "PROMPTS/42-SUPPORT-CUSTOMER-SUCCESS/1-IA1-ANALYSE.md": "2f8a4f0e57e1bb3e4826c96d67fdab83446b1831eda6670a9bf7683363922904",
+    "PROMPTS/42-SUPPORT-CUSTOMER-SUCCESS/2-IA2-VERIFICATION.md": "2e85d501d94ef5353ba6b88a26eb03fabd47cc0f9e83a7a84ecb4d923d2fea17",
+    "PROMPTS/42-SUPPORT-CUSTOMER-SUCCESS/3-IA3-EXECUTION.md": "ecd0b9887767d3aa14b571fc3e41fa39d6784858e93e225fb816373df64d80f3",
+    "PROMPTS/42-SUPPORT-CUSTOMER-SUCCESS/4-IA4-CONTROLE.md": "6ad91d40bda4786a73136d2ee2349f8c42dfe7760f6a438deb0fe11f28c8b79b",
+    "PROMPTS/43-PLACEHOLDERS-CLEANUP/1-IA1-ANALYSE.md": "c913ad1244d3b13170618b59ac48c5b2f6954269ff4eb375e128bdeaf93585dc",
+    "PROMPTS/43-PLACEHOLDERS-CLEANUP/2-IA2-VERIFICATION.md": "091b26ece5df3005ca212d94734c27a32e5f6d28c6423f2d3ab26ede7f9aa5c4",
+    "PROMPTS/43-PLACEHOLDERS-CLEANUP/3-IA3-EXECUTION.md": "74abcc534a68f571a13536e77217334601b5562aee8eff45a2ddc19bacb1cb51",
+    "PROMPTS/43-PLACEHOLDERS-CLEANUP/4-IA4-CONTROLE.md": "848e176cbfb0314273e2c8b8af01c8f11d66c4a681acf99c941cf5b7150b62d5",
+    "PROMPTS/44-TESTING/1-IA1-ANALYSE.md": "8376410fce0d8da302cf06578a1bbf483e2aa6d4351f4f3d12fc38e1399bb19b",
+    "PROMPTS/44-TESTING/2-IA2-VERIFICATION.md": "0215c44af45ba83e46d62604e4970dd896efdfd12c0fe83ba28d070c40ad1c5d",
+    "PROMPTS/44-TESTING/3-IA3-EXECUTION.md": "2221981f00865d7e90490c4fb7190ae33665e6cc1879444fff3659facb8df828",
+    "PROMPTS/44-TESTING/4-IA4-CONTROLE.md": "78a75a7da7b32c68cf88306b0ef2b21c0f21b100c7cf355985dab9a4e880d1a4",
+    "PROMPTS/45-CI-CD/1-IA1-ANALYSE.md": "b39f1ac2b8f0f74433ab9039048c103af3ebceb03ac1571e707b4e40e5a9d6cb",
+    "PROMPTS/45-CI-CD/2-IA2-VERIFICATION.md": "c5ab94cf007bc0255d0765a0b16dde0e2c3a6bd3f637459b0569a6715c29819b",
+    "PROMPTS/45-CI-CD/3-IA3-EXECUTION.md": "f9c7ab50d44061e73e99039bfd45ed455fda2f3b61627302d118893f6e94fdc0",
+    "PROMPTS/45-CI-CD/4-IA4-CONTROLE.md": "c8bdc2b41d1632be5e0782f3562b45257691c31c2126f1d94ae5aeec39fad98a",
+    "PROMPTS/46-ENV-PARITY/1-IA1-ANALYSE.md": "971eefcd1dc1bc45a559ee8f91122dcb234b4ad3f1c4671ebecbf6fa0255bd70",
+    "PROMPTS/46-ENV-PARITY/2-IA2-VERIFICATION.md": "fa6dbe83f9d970561077ca68b386aa739085f4b72384aa450e30e5c50f4f257e",
+    "PROMPTS/46-ENV-PARITY/3-IA3-EXECUTION.md": "f82706d778e4c77a8bd89346aad119bdf52d2402fe76fb49eac5d363ff2a6810",
+    "PROMPTS/46-ENV-PARITY/4-IA4-CONTROLE.md": "2e71b0e7822fa59af4e063bafdcb83fc418ebc98feefea0cd870f47608d120e3",
+    "PROMPTS/47-STAGING-DEPLOY/1-IA1-ANALYSE.md": "e21511a11faa2f101c1c41c55fccf38abfc674bb5f506daeb2291e4c1d6de5cd",
+    "PROMPTS/47-STAGING-DEPLOY/2-IA2-VERIFICATION.md": "a23a3a96632da0222a9cc581941b77ec49294feb7d4f3170e5a4cfe993564406",
+    "PROMPTS/47-STAGING-DEPLOY/3-IA3-EXECUTION.md": "faac52bd5e633a1959c01cd29bd00637a55c13c81a8d4f18f3147ec6bc0578f3",
+    "PROMPTS/47-STAGING-DEPLOY/4-IA4-CONTROLE.md": "bab68089df1d4d7b6a424f41982e017b3ced82105970179878291043d5c997c1",
+    "PROMPTS/48-INCIDENT-RESPONSE/1-IA1-ANALYSE.md": "aa265207e36ec13a15a3a50338f3d632040674c48ec55e10074c89bca1b68792",
+    "PROMPTS/48-INCIDENT-RESPONSE/2-IA2-VERIFICATION.md": "9521b2b0bfcb2ed586ee3a536caee0d69357a8e90fd681f52cbb9f70232b5fd8",
+    "PROMPTS/48-INCIDENT-RESPONSE/3-IA3-EXECUTION.md": "d5f4a868ab4b4e61605d2fa2109b3873eebf60c214f0fc98826007f68fa743ca",
+    "PROMPTS/48-INCIDENT-RESPONSE/4-IA4-CONTROLE.md": "bbf8cae6b7fca8f87f55a435ef7744063c1c31145f5886147d4b12bdcb858ba9",
+    "PROMPTS/49-RELEASE-VERSIONING-CHANGELOG/1-IA1-ANALYSE.md": "3f6505df19c33d3b9269fd49b02c6e896cd5da62f0fa0ad283d7814af4755d48",
+    "PROMPTS/49-RELEASE-VERSIONING-CHANGELOG/2-IA2-VERIFICATION.md": "3773b117a3ea6b3992f51227c3614163b2b547a0322b99879c382517be779b42",
+    "PROMPTS/49-RELEASE-VERSIONING-CHANGELOG/3-IA3-EXECUTION.md": "51971b1c818c72f24859a3a128ba587463e5a7ef702a1a3271faae36d072a538",
+    "PROMPTS/49-RELEASE-VERSIONING-CHANGELOG/4-IA4-CONTROLE.md": "436bf7b512e9c57c3e3bf56cb528099a61599d9b1eea9c2fd1b8dba440be7f79",
+    "PROMPTS/50-PWA-ICONS/1-IA1-ANALYSE.md": "3d0fc49601909b4bbac39648440a9c472bddab3d2f2feab21151ee672377395f",
+    "PROMPTS/50-PWA-ICONS/2-IA2-VERIFICATION.md": "585a745ffebd4db18d81bf06634d113073d69ba81f97d56b18ce0919046f4c61",
+    "PROMPTS/50-PWA-ICONS/3-IA3-EXECUTION.md": "496c7690f0ce39adc2e2e93befbbafdb81c30af13475d9c863fadd68bcc01c10",
+    "PROMPTS/50-PWA-ICONS/4-IA4-CONTROLE.md": "a1a76ffda27787a562e72c62e9f660e32ad8e000a647a453e5497cf601568f5b",
+    "PROMPTS/51-README-DOCUMENTATION/1-IA1-ANALYSE.md": "937cf0c7feb87e1cd49b36bdfc1e9d83fdd569b0b470d151daef03d324d5f2e8",
+    "PROMPTS/51-README-DOCUMENTATION/2-IA2-VERIFICATION.md": "44bcbda5744ebca2d8d5efe3ad79f4c9dfcfc273b6a313af0fa9bff6104f69d2",
+    "PROMPTS/51-README-DOCUMENTATION/3-IA3-EXECUTION.md": "5d6028bb2e94a90c132284425ba7784e9fd8528031c00741255aeeae24fe060c",
+    "PROMPTS/51-README-DOCUMENTATION/4-IA4-CONTROLE.md": "7b019dbb4dcde029cd2373c9844e43eb2142f49e8a189469a8e47914d776a42b",
+    "PROMPTS/52-SOURCE-OF-TRUTH-LOCK/1-IA1-ANALYSE.md": "e411cb9647a8ea6c7824d5bcc86708d9a72dc665e469a74d3a4ec205a93410ed",
+    "PROMPTS/52-SOURCE-OF-TRUTH-LOCK/2-IA2-VERIFICATION.md": "d68bb371d1056ef8a4ce1548b35945e643d1fb10bb2df793d8ba5f943e1fb651",
+    "PROMPTS/52-SOURCE-OF-TRUTH-LOCK/3-IA3-EXECUTION.md": "e1302ac8eb21841da0d5a33971109aaf545f2bc1f7b518b0801aeb42adc6766f",
+    "PROMPTS/52-SOURCE-OF-TRUTH-LOCK/4-IA4-CONTROLE.md": "3e8c34f92f0974cf31cefa77c2015a9aed4373166d0ac5e9f0899ccfeef96e2a",
+    "PROMPTS/53-FINAL-CLOSURE/1-IA1-ANALYSE.md": "2c99a9deda9e35a4962afc70da844fd137b632ebcfbf2c97483976ba9588775e",
+    "PROMPTS/53-FINAL-CLOSURE/2-IA2-VERIFICATION.md": "5f5490064964726147bb29e24f580ce10d62954d85278427324cb451b712c8ec",
+    "PROMPTS/53-FINAL-CLOSURE/3-IA3-EXECUTION.md": "97309cb2d714a7bde084a5fae86d21e62c50788ec4eec8ddbbe320d1bdf94569",
+    "PROMPTS/53-FINAL-CLOSURE/4-IA4-CONTROLE.md": "a9cce4e7952bb04e28bae2583253539d8c639038061b22c610f1297d187f551d",
+    "READING-ORDER.md": "da64806d86bf48481534f795284891b01683910725e9914bf62daf853d1b2c2a",
+    "README.md": "2277048e347c2c79a72874505853bf21131b6b454031f52a2dbdab1302f2208e",
+    "SNAPSHOTS.json": "999359abdb60bfede0f460c1d1d89712997ad5ebd485ac31357bff6c5699cbb6",
+    "SOURCE-OF-TRUTH-RULES.md": "c4c31f24115ba4999c5741e56da384183519d8aa203aff5af574f54eb0e4778f",
+    "STRUCTURAL-VALIDATION.md": "3ea2978457168e4893b7fa9912a704f5ed393fc603aa5a2e45e941178efbe736",
+    "SYSTEM-AUDIT-REPORT.md": "5f18e4e97ce1f5bf1c1e32c2e9bdf60d0a4cf1df2441dc4ea32a46d009d82b96",
+    "SYSTEM-MAP.md": "1b6fb66aecda467c771915c50ab05cb86fe720dac402f59f632a48434c36ddaa",
+    "TEMPLATES/APPLICABILITY-TEMPLATE.md": "f2d3a2f9820a721d1ef85ca6aaf88861b62bd083d886da16c4462267fb1e0fd7",
+    "TEMPLATES/CONFIG-TEMPLATE.json": "e12820a8de5a9662cc261f9b96069198beadda76019b2d8afbca7cf03e567405",
+    "TEMPLATES/GIT-INJECTION-TEMPLATE.md": "a7f6c0d3c6fec8a43d4f394faceea73c23f96bfe5bce3fbc3ea66dd7b24170a3",
+    "TEMPLATES/SOURCE-OF-TRUTH-TEMPLATE.md": "a0c7f3a358408bb1381c164fbddaa7bc35ba564deeb4f6410e06e1a897e4566a",
+    "TEMPLATES/STAGES/1-IA1-ANALYSE.md": "c48610b8fb6f2017246ffa016812c42d2d6980d6cfd1d9580006f3bc6546a4e6",
+    "TEMPLATES/STAGES/2-IA2-VERIFICATION.md": "d4ab3f545ccdc63817cbd11e1868a7d5fc8e5aef6ea0fbce2d2a15c3cd4bbfb7",
+    "TEMPLATES/STAGES/3-IA3-EXECUTION.md": "256235c89444d84c79b8f98b81748422850b33dd38cb43c33a071f97d2b8d3bd",
+    "TEMPLATES/STAGES/4-IA4-CONTROLE.md": "6cf6b7e0b12fb06a39790acf367c3c5aa593723fc4a67ae63f072164fb4bb31d",
+    "TESTS/test_generated_system.py": "43ed6aec50460cd401e525f1286d64624c9d0800bc64b961957c8ee2b533953e",
+    "TOOLS/audit_append.py": "2e23508e7baa68814b52cc18e3ab3a84b29ca918db9f072a18fdcd0d3600e9ac",
+    "TOOLS/mdai.py": "f2b9eabcc426fe2de46a1fe8de052cc24d925516a956cd49a91f9143e7ef20ce",
+    "TOOLS/next_prompt.py": "c776bd9082fa622338516f406bdff579370f0c2a5882af9cad115fb4569d6a72",
+    "TOOLS/state_index.py": "2de6ac6192e169bde35efe255c5ced89c51ab68e0653220f88791ea1660e8d4a",
+    "TOOLS/state_overview.py": "aa02824a528b5dc3afcc8ed1a6c6de6be44cb952ede9467e0dd6e492b30f2184",
+    "TOOLS/validate_system.py": "a58c2477d5ae98846cf23fe396c3a7dd41ef969602bc8ff8ae74745200f0c3b8",
+    "WORKFLOW-RULES.md": "dc41acd4bbd9d05d54259759a154678dc4adadd79ba7e5438bffab7d751ae5b6"
+  },
+  "git_runtime": "git version 2.47.3",
+  "operational_category_count_excluding_start": 53,
+  "os_compatibility": [
+    "Windows",
+    "macOS",
+    "Linux"
+  ],
+  "policy_profiles": [
+    "PRODUCTION",
+    "STAGING",
+    "POC"
+  ],
+  "project_profiles": [
+    "website",
+    "saas",
+    "ecommerce",
+    "api_backend",
+    "internal_app"
+  ],
+  "prompt_count": 216,
+  "python_min": "3.8",
+  "python_runtime": "3.13.5",
+  "revision": "5.2.0-double-controle",
+  "revision_date_utc": "2026-09-10T17:15:20Z",
+  "runtime_files": [
+    ".md-ai-system/AUDIT.jsonl",
+    ".md-ai-system/CONFIG.json",
+    ".md-ai-system/DECISIONS.json",
+    ".md-ai-system/STATE-OVERVIEW.md",
+    ".md-ai-system/STATE.json",
+    ".md-ai-system/state/00-START.json",
+    ".md-ai-system/state/01-PROJECT-PROFILE-APPLICABILITY.json",
+    ".md-ai-system/state/02-STACK.json",
+    ".md-ai-system/state/03-BOOTSTRAP.json",
+    ".md-ai-system/state/04-ARCHITECTURE.json",
+    ".md-ai-system/state/05-DATA-BACKEND-AUTH.json",
+    ".md-ai-system/state/06-SAAS-LIFECYCLE.json",
+    ".md-ai-system/state/07-ECOMMERCE-LIFECYCLE.json",
+    ".md-ai-system/state/08-INTERNAL-APP-GOVERNANCE.json",
+    ".md-ai-system/state/09-API-BACKEND-GOVERNANCE.json",
+    ".md-ai-system/state/10-BACKUP-RESTORE.json",
+    ".md-ai-system/state/11-MARKETING-BRAND-DIFFERENTIATION.json",
+    ".md-ai-system/state/12-DESIGN-SYSTEM-BRAND.json",
+    ".md-ai-system/state/13-DESIGN-NAVIGATION.json",
+    ".md-ai-system/state/14-MULTILINGUE.json",
+    ".md-ai-system/state/15-COPYWRITING-PERSUASION.json",
+    ".md-ai-system/state/16-CONTENT-BLOG.json",
+    ".md-ai-system/state/17-MEDIA-HERO-IMAGES-BLOG.json",
+    ".md-ai-system/state/18-ASSET-LICENSES.json",
+    ".md-ai-system/state/19-COMMERCIAL-FUNNEL-CONVERSION.json",
+    ".md-ai-system/state/20-CRM-LEAD-LIFECYCLE.json",
+    ".md-ai-system/state/21-POST-CONVERSION-RETENTION.json",
+    ".md-ai-system/state/22-BOT-WHATSAPP.json",
+    ".md-ai-system/state/23-INTEGRATIONS.json",
+    ".md-ai-system/state/24-EMAIL-DNS.json",
+    ".md-ai-system/state/25-PAYMENTS-ECOM.json",
+    ".md-ai-system/state/26-JOBS-CRON.json",
+    ".md-ai-system/state/27-COOKIE-CONSENT-PRIVACY.json",
+    ".md-ai-system/state/28-ATTRIBUTION-TRACKING.json",
+    ".md-ai-system/state/29-SEO.json",
+    ".md-ai-system/state/30-SEO-OPERATIONS.json",
+    ".md-ai-system/state/31-ACCESSIBILITY.json",
+    ".md-ai-system/state/32-SECURITY-LEGAL.json",
+    ".md-ai-system/state/33-DEPENDENCY-AUDIT.json",
+    ".md-ai-system/state/34-PERFORMANCE.json",
+    ".md-ai-system/state/35-ANALYTICS-MONITORING.json",
+    ".md-ai-system/state/36-HEALTH-UPTIME.json",
+    ".md-ai-system/state/37-RESPONSIVE.json",
+    ".md-ai-system/state/38-CROSS-BROWSER.json",
+    ".md-ai-system/state/39-VISUAL-REGRESSION.json",
+    ".md-ai-system/state/40-ERRORS-RESILIENCE.json",
+    ".md-ai-system/state/41-CONTENT-GOVERNANCE.json",
+    ".md-ai-system/state/42-SUPPORT-CUSTOMER-SUCCESS.json",
+    ".md-ai-system/state/43-PLACEHOLDERS-CLEANUP.json",
+    ".md-ai-system/state/44-TESTING.json",
+    ".md-ai-system/state/45-CI-CD.json",
+    ".md-ai-system/state/46-ENV-PARITY.json",
+    ".md-ai-system/state/47-STAGING-DEPLOY.json",
+    ".md-ai-system/state/48-INCIDENT-RESPONSE.json",
+    ".md-ai-system/state/49-RELEASE-VERSIONING-CHANGELOG.json",
+    ".md-ai-system/state/50-PWA-ICONS.json",
+    ".md-ai-system/state/51-README-DOCUMENTATION.json",
+    ".md-ai-system/state/52-SOURCE-OF-TRUTH-LOCK.json",
+    ".md-ai-system/state/53-FINAL-CLOSURE.json"
+  ],
+  "schema_version": "2.2",
+  "stages": [
+    "1-IA1-ANALYSE.md",
+    "2-IA2-VERIFICATION.md",
+    "3-IA3-EXECUTION.md",
+    "4-IA4-CONTROLE.md"
+  ],
+  "version": "5.1"
+}

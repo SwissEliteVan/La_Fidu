@@ -1,0 +1,346 @@
+{
+  "cycles": [],
+  "edges": [
+    {
+      "from": "00-START",
+      "to": "01-PROJECT-PROFILE-APPLICABILITY"
+    },
+    {
+      "from": "01-PROJECT-PROFILE-APPLICABILITY",
+      "to": "02-STACK"
+    },
+    {
+      "from": "02-STACK",
+      "to": "03-BOOTSTRAP"
+    },
+    {
+      "from": "03-BOOTSTRAP",
+      "to": "04-ARCHITECTURE"
+    },
+    {
+      "from": "04-ARCHITECTURE",
+      "to": "05-DATA-BACKEND-AUTH"
+    },
+    {
+      "from": "05-DATA-BACKEND-AUTH",
+      "to": "06-SAAS-LIFECYCLE"
+    },
+    {
+      "from": "05-DATA-BACKEND-AUTH",
+      "to": "07-ECOMMERCE-LIFECYCLE"
+    },
+    {
+      "from": "05-DATA-BACKEND-AUTH",
+      "to": "08-INTERNAL-APP-GOVERNANCE"
+    },
+    {
+      "from": "05-DATA-BACKEND-AUTH",
+      "to": "09-API-BACKEND-GOVERNANCE"
+    },
+    {
+      "from": "05-DATA-BACKEND-AUTH",
+      "to": "10-BACKUP-RESTORE"
+    },
+    {
+      "from": "01-PROJECT-PROFILE-APPLICABILITY",
+      "to": "11-MARKETING-BRAND-DIFFERENTIATION"
+    },
+    {
+      "from": "11-MARKETING-BRAND-DIFFERENTIATION",
+      "to": "12-DESIGN-SYSTEM-BRAND"
+    },
+    {
+      "from": "12-DESIGN-SYSTEM-BRAND",
+      "to": "13-DESIGN-NAVIGATION"
+    },
+    {
+      "from": "04-ARCHITECTURE",
+      "to": "14-MULTILINGUE"
+    },
+    {
+      "from": "11-MARKETING-BRAND-DIFFERENTIATION",
+      "to": "15-COPYWRITING-PERSUASION"
+    },
+    {
+      "from": "15-COPYWRITING-PERSUASION",
+      "to": "16-CONTENT-BLOG"
+    },
+    {
+      "from": "12-DESIGN-SYSTEM-BRAND",
+      "to": "17-MEDIA-HERO-IMAGES-BLOG"
+    },
+    {
+      "from": "16-CONTENT-BLOG",
+      "to": "17-MEDIA-HERO-IMAGES-BLOG"
+    },
+    {
+      "from": "17-MEDIA-HERO-IMAGES-BLOG",
+      "to": "18-ASSET-LICENSES"
+    },
+    {
+      "from": "15-COPYWRITING-PERSUASION",
+      "to": "19-COMMERCIAL-FUNNEL-CONVERSION"
+    },
+    {
+      "from": "13-DESIGN-NAVIGATION",
+      "to": "19-COMMERCIAL-FUNNEL-CONVERSION"
+    },
+    {
+      "from": "19-COMMERCIAL-FUNNEL-CONVERSION",
+      "to": "20-CRM-LEAD-LIFECYCLE"
+    },
+    {
+      "from": "19-COMMERCIAL-FUNNEL-CONVERSION",
+      "to": "21-POST-CONVERSION-RETENTION"
+    },
+    {
+      "from": "19-COMMERCIAL-FUNNEL-CONVERSION",
+      "to": "22-BOT-WHATSAPP"
+    },
+    {
+      "from": "04-ARCHITECTURE",
+      "to": "23-INTEGRATIONS"
+    },
+    {
+      "from": "23-INTEGRATIONS",
+      "to": "24-EMAIL-DNS"
+    },
+    {
+      "from": "05-DATA-BACKEND-AUTH",
+      "to": "25-PAYMENTS-ECOM"
+    },
+    {
+      "from": "23-INTEGRATIONS",
+      "to": "25-PAYMENTS-ECOM"
+    },
+    {
+      "from": "04-ARCHITECTURE",
+      "to": "26-JOBS-CRON"
+    },
+    {
+      "from": "23-INTEGRATIONS",
+      "to": "27-COOKIE-CONSENT-PRIVACY"
+    },
+    {
+      "from": "19-COMMERCIAL-FUNNEL-CONVERSION",
+      "to": "28-ATTRIBUTION-TRACKING"
+    },
+    {
+      "from": "27-COOKIE-CONSENT-PRIVACY",
+      "to": "28-ATTRIBUTION-TRACKING"
+    },
+    {
+      "from": "16-CONTENT-BLOG",
+      "to": "29-SEO"
+    },
+    {
+      "from": "17-MEDIA-HERO-IMAGES-BLOG",
+      "to": "29-SEO"
+    },
+    {
+      "from": "29-SEO",
+      "to": "30-SEO-OPERATIONS"
+    },
+    {
+      "from": "13-DESIGN-NAVIGATION",
+      "to": "31-ACCESSIBILITY"
+    },
+    {
+      "from": "17-MEDIA-HERO-IMAGES-BLOG",
+      "to": "31-ACCESSIBILITY"
+    },
+    {
+      "from": "27-COOKIE-CONSENT-PRIVACY",
+      "to": "31-ACCESSIBILITY"
+    },
+    {
+      "from": "05-DATA-BACKEND-AUTH",
+      "to": "32-SECURITY-LEGAL"
+    },
+    {
+      "from": "27-COOKIE-CONSENT-PRIVACY",
+      "to": "32-SECURITY-LEGAL"
+    },
+    {
+      "from": "02-STACK",
+      "to": "33-DEPENDENCY-AUDIT"
+    },
+    {
+      "from": "17-MEDIA-HERO-IMAGES-BLOG",
+      "to": "34-PERFORMANCE"
+    },
+    {
+      "from": "33-DEPENDENCY-AUDIT",
+      "to": "34-PERFORMANCE"
+    },
+    {
+      "from": "27-COOKIE-CONSENT-PRIVACY",
+      "to": "35-ANALYTICS-MONITORING"
+    },
+    {
+      "from": "28-ATTRIBUTION-TRACKING",
+      "to": "35-ANALYTICS-MONITORING"
+    },
+    {
+      "from": "04-ARCHITECTURE",
+      "to": "36-HEALTH-UPTIME"
+    },
+    {
+      "from": "13-DESIGN-NAVIGATION",
+      "to": "37-RESPONSIVE"
+    },
+    {
+      "from": "17-MEDIA-HERO-IMAGES-BLOG",
+      "to": "37-RESPONSIVE"
+    },
+    {
+      "from": "37-RESPONSIVE",
+      "to": "38-CROSS-BROWSER"
+    },
+    {
+      "from": "37-RESPONSIVE",
+      "to": "39-VISUAL-REGRESSION"
+    },
+    {
+      "from": "12-DESIGN-SYSTEM-BRAND",
+      "to": "39-VISUAL-REGRESSION"
+    },
+    {
+      "from": "04-ARCHITECTURE",
+      "to": "40-ERRORS-RESILIENCE"
+    },
+    {
+      "from": "16-CONTENT-BLOG",
+      "to": "41-CONTENT-GOVERNANCE"
+    },
+    {
+      "from": "21-POST-CONVERSION-RETENTION",
+      "to": "42-SUPPORT-CUSTOMER-SUCCESS"
+    },
+    {
+      "from": "40-ERRORS-RESILIENCE",
+      "to": "42-SUPPORT-CUSTOMER-SUCCESS"
+    },
+    {
+      "from": "04-ARCHITECTURE",
+      "to": "43-PLACEHOLDERS-CLEANUP"
+    },
+    {
+      "from": "04-ARCHITECTURE",
+      "to": "44-TESTING"
+    },
+    {
+      "from": "44-TESTING",
+      "to": "45-CI-CD"
+    },
+    {
+      "from": "44-TESTING",
+      "to": "46-ENV-PARITY"
+    },
+    {
+      "from": "44-TESTING",
+      "to": "47-STAGING-DEPLOY"
+    },
+    {
+      "from": "46-ENV-PARITY",
+      "to": "47-STAGING-DEPLOY"
+    },
+    {
+      "from": "10-BACKUP-RESTORE",
+      "to": "48-INCIDENT-RESPONSE"
+    },
+    {
+      "from": "36-HEALTH-UPTIME",
+      "to": "48-INCIDENT-RESPONSE"
+    },
+    {
+      "from": "47-STAGING-DEPLOY",
+      "to": "48-INCIDENT-RESPONSE"
+    },
+    {
+      "from": "47-STAGING-DEPLOY",
+      "to": "49-RELEASE-VERSIONING-CHANGELOG"
+    },
+    {
+      "from": "13-DESIGN-NAVIGATION",
+      "to": "50-PWA-ICONS"
+    },
+    {
+      "from": "44-TESTING",
+      "to": "51-README-DOCUMENTATION"
+    },
+    {
+      "from": "47-STAGING-DEPLOY",
+      "to": "51-README-DOCUMENTATION"
+    },
+    {
+      "from": "49-RELEASE-VERSIONING-CHANGELOG",
+      "to": "51-README-DOCUMENTATION"
+    },
+    {
+      "from": "51-README-DOCUMENTATION",
+      "to": "52-SOURCE-OF-TRUTH-LOCK"
+    },
+    {
+      "from": "52-SOURCE-OF-TRUTH-LOCK",
+      "to": "53-FINAL-CLOSURE"
+    }
+  ],
+  "nodes": [
+    "00-START",
+    "01-PROJECT-PROFILE-APPLICABILITY",
+    "02-STACK",
+    "03-BOOTSTRAP",
+    "04-ARCHITECTURE",
+    "05-DATA-BACKEND-AUTH",
+    "06-SAAS-LIFECYCLE",
+    "07-ECOMMERCE-LIFECYCLE",
+    "08-INTERNAL-APP-GOVERNANCE",
+    "09-API-BACKEND-GOVERNANCE",
+    "10-BACKUP-RESTORE",
+    "11-MARKETING-BRAND-DIFFERENTIATION",
+    "12-DESIGN-SYSTEM-BRAND",
+    "13-DESIGN-NAVIGATION",
+    "14-MULTILINGUE",
+    "15-COPYWRITING-PERSUASION",
+    "16-CONTENT-BLOG",
+    "17-MEDIA-HERO-IMAGES-BLOG",
+    "18-ASSET-LICENSES",
+    "19-COMMERCIAL-FUNNEL-CONVERSION",
+    "20-CRM-LEAD-LIFECYCLE",
+    "21-POST-CONVERSION-RETENTION",
+    "22-BOT-WHATSAPP",
+    "23-INTEGRATIONS",
+    "24-EMAIL-DNS",
+    "25-PAYMENTS-ECOM",
+    "26-JOBS-CRON",
+    "27-COOKIE-CONSENT-PRIVACY",
+    "28-ATTRIBUTION-TRACKING",
+    "29-SEO",
+    "30-SEO-OPERATIONS",
+    "31-ACCESSIBILITY",
+    "32-SECURITY-LEGAL",
+    "33-DEPENDENCY-AUDIT",
+    "34-PERFORMANCE",
+    "35-ANALYTICS-MONITORING",
+    "36-HEALTH-UPTIME",
+    "37-RESPONSIVE",
+    "38-CROSS-BROWSER",
+    "39-VISUAL-REGRESSION",
+    "40-ERRORS-RESILIENCE",
+    "41-CONTENT-GOVERNANCE",
+    "42-SUPPORT-CUSTOMER-SUCCESS",
+    "43-PLACEHOLDERS-CLEANUP",
+    "44-TESTING",
+    "45-CI-CD",
+    "46-ENV-PARITY",
+    "47-STAGING-DEPLOY",
+    "48-INCIDENT-RESPONSE",
+    "49-RELEASE-VERSIONING-CHANGELOG",
+    "50-PWA-ICONS",
+    "51-README-DOCUMENTATION",
+    "52-SOURCE-OF-TRUTH-LOCK",
+    "53-FINAL-CLOSURE"
+  ],
+  "schema_version": "2.2"
+}

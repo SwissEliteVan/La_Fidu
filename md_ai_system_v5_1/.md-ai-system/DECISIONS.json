@@ -1,0 +1,15 @@
+{
+  "decision_fields": [
+    "id",
+    "decision",
+    "scope",
+    "state",
+    "tests",
+    "validation_commit",
+    "known_limitations",
+    "locked_by",
+    "locked_at"
+  ],
+  "locked_decisions": [],
+  "schema_version": "2.2"
+}
