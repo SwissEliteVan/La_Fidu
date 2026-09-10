@@ -25,10 +25,15 @@
       "ts": "2026-09-10T20:16:38Z",
       "verdict": "ANALYSE"
     },
-    "ia2": null,
+    "ia2": {
+      "provider": "deepseek",
+      "summary": "Verification independante IA2 confirme le point d'entree markdown_docs/README.md, les 7 documents actifs et leur corruption (mojibake, lignes tronquees) ; aucune Source of truth ni decision verrouillee (DECISIONS.json vide), pas de dossier docs/ ; contradictions IA1 relevees : .pyc non versionnes (git ls-files vide, .gitignore ajoute) et Calendly/Google Analytics absents (Google Search Console et Google Business Profile references dans SEO_CONTENT).",
+      "ts": "2026-09-10T21:23:28Z",
+      "verdict": "VALIDÉ"
+    },
     "ia3": null,
     "ia4": null,
-    "last_completed_stage": "1-IA1-ANALYSE.md",
+    "last_completed_stage": "2-IA2-VERIFICATION.md",
     "mode": "NEW_WORK",
     "revalidation_authorized_by_ia4": false,
     "trigger": "initial"
