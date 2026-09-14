@@ -1,0 +1,81 @@
+---
+import Footer from '../components/Footer.astro';
+import Header from '../components/Header.astro';
+import BaseLayout from '../layouts/BaseLayout.astro';
+
+const title = 'Contact | LA FIDUCIAIRE';
+const description = 'Préparer un premier échange avec LA FIDUCIAIRE pour une activité indépendante, une TPE ou une PME.';
+---
+
+<BaseLayout {title} {description}>
+  <Header />
+  <main id="contenu">
+    <section class="section page-intro">
+      <div class="container contact-grid">
+        <div>
+          <p class="eyebrow">Contact</p>
+          <h1>Préparer un premier échange</h1>
+          <p class="lead">Pour établir un périmètre utile, le premier échange doit clarifier votre structure, votre volume et les prestations dont vous avez réellement besoin.</p>
+        </div>
+        <aside class="status-card" aria-labelledby="contact-status-title">
+          <h2 id="contact-status-title">Contact en ligne</h2>
+          <p>Le formulaire sécurisé sera activé après validation de l’adresse professionnelle de destination et de l’endpoint PHP sur Hostinger.</p>
+          <p>Aucune donnée personnelle n’est collectée sur cette page pour l’instant.</p>
+        </aside>
+      </div>
+    </section>
+
+    <section class="section section--alt" aria-labelledby="prepare-title">
+      <div class="container">
+        <h2 id="prepare-title">Les informations utiles pour cadrer la demande</h2>
+        <div class="grid grid--3">
+          <article class="card">
+            <h3>Votre structure</h3>
+            <p>Raison individuelle, Sàrl, autre forme ou projet de création.</p>
+          </article>
+          <article class="card">
+            <h3>Votre volume</h3>
+            <p>Ordre de grandeur des pièces mensuelles et nombre de collaborateurs concernés.</p>
+          </article>
+          <article class="card">
+            <h3>Votre besoin</h3>
+            <p>Comptabilité courante, TVA, salaires, bouclement, pilotage ou accompagnement à la création.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+  </main>
+  <Footer />
+</BaseLayout>
+
+<style>
+  .page-intro {
+    padding-top: clamp(4.5rem, 9vw, 7rem);
+  }
+
+  .contact-grid {
+    display: grid;
+    gap: 2.5rem;
+    align-items: start;
+  }
+
+  .status-card {
+    border-left: 3px solid var(--color-accent);
+    padding: 0.25rem 0 0.25rem 1.5rem;
+  }
+
+  .status-card h2 {
+    font-size: var(--text-h3);
+  }
+
+  .status-card p {
+    margin-top: 0.75rem;
+    color: var(--color-muted);
+  }
+
+  @media (min-width: 48rem) {
+    .contact-grid {
+      grid-template-columns: minmax(0, 1.4fr) minmax(18rem, 0.8fr);
+    }
+  }
+</style>

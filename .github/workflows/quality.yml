@@ -12,7 +12,7 @@ permissions:
 jobs:
   quality:
     runs-on: ubuntu-latest
-    timeout-minutes: 15
+    timeout-minutes: 20
     steps:
       - name: Checkout
         uses: actions/checkout@v5
@@ -46,12 +46,27 @@ jobs:
           cat /tmp/astro-preview.log
           exit 1
 
+      - name: Smoke core routes
+        run: |
+          set -e
+          for route in / /services/ /services/independants/ /services/pme/ /services/salaires/ /services/tva/ /services/creation-entreprise/ /services/bouclement/ /services/conseil-fiscal/ /tarifs/ /a-propos/ /contact/; do
+            curl --fail --silent --show-error "http://127.0.0.1:4321${route}" > /dev/null
+          done
+          test "$(curl --silent --output /dev/null --write-out '%{http_code}' http://127.0.0.1:4321/page-inexistante)" = "404"
+
       - name: Capture responsive screenshots
         run: |
+          set -e
           mkdir -p qa
-          npx --yes playwright@1.63.0 screenshot --browser=chromium --viewport-size="360,900" --full-page http://127.0.0.1:4321/ qa/home-360.png
-          npx --yes playwright@1.63.0 screenshot --browser=chromium --viewport-size="768,1024" --full-page http://127.0.0.1:4321/ qa/home-768.png
-          npx --yes playwright@1.63.0 screenshot --browser=chromium --viewport-size="1440,1000" --full-page http://127.0.0.1:4321/ qa/home-1440.png
+          for route in home services tarifs a-propos contact; do
+            case "$route" in
+              home) url="/" ;;
+              *) url="/$route/" ;;
+            esac
+            npx --yes playwright@1.63.0 screenshot --browser=chromium --viewport-size="360,900" --full-page "http://127.0.0.1:4321${url}" "qa/${route}-360.png"
+            npx --yes playwright@1.63.0 screenshot --browser=chromium --viewport-size="768,1024" --full-page "http://127.0.0.1:4321${url}" "qa/${route}-768.png"
+            npx --yes playwright@1.63.0 screenshot --browser=chromium --viewport-size="1440,1000" --full-page "http://127.0.0.1:4321${url}" "qa/${route}-1440.png"
+          done
 
       - name: Upload QA artifacts
         uses: actions/upload-artifact@v4

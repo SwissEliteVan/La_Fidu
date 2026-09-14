@@ -1,0 +1,37 @@
+---
+import Footer from '../components/Footer.astro';
+import Header from '../components/Header.astro';
+import BaseLayout from '../layouts/BaseLayout.astro';
+
+const title = 'Page introuvable | LA FIDUCIAIRE';
+const description = 'La page demandée est introuvable.';
+---
+
+<BaseLayout {title} {description}>
+  <Header />
+  <main id="contenu">
+    <section class="section error-page">
+      <div class="container narrow">
+        <p class="eyebrow">Erreur 404</p>
+        <h1>Cette page n’existe pas</h1>
+        <p class="lead">Le lien utilisé est peut-être ancien ou incorrect. Revenez à l’accueil ou consultez les services.</p>
+        <div class="actions">
+          <a class="button button--primary" href="/">Retour à l’accueil</a>
+          <a class="button button--secondary" href="/services/">Voir les services</a>
+        </div>
+      </div>
+    </section>
+  </main>
+  <Footer />
+</BaseLayout>
+
+<style>
+  .error-page {
+    min-height: 65vh;
+    padding-top: clamp(5rem, 10vw, 8rem);
+  }
+
+  .narrow {
+    max-width: 50rem;
+  }
+</style>

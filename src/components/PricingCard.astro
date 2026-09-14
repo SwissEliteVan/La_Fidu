@@ -1,0 +1,66 @@
+---
+import type { PricingPlan } from '../data/pricing';
+
+interface Props {
+  plan: PricingPlan;
+}
+
+const { plan } = Astro.props;
+---
+
+<article class="pricing-card">
+  <div>
+    <h3>{plan.name}</h3>
+    <p class="price">{plan.price}</p>
+    <p class="target">{plan.target}</p>
+  </div>
+  <ul>
+    {plan.features.map((feature) => <li>{feature}</li>)}
+  </ul>
+  {plan.note && <p class="note">{plan.note}</p>}
+  <a class="button button--secondary" href="/contact/">Parler de votre situation</a>
+</article>
+
+<style>
+  .pricing-card {
+    display: flex;
+    min-height: 100%;
+    flex-direction: column;
+    gap: 1.25rem;
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius);
+    padding: 1.5rem;
+    background: var(--color-surface);
+  }
+
+  .price {
+    margin-top: 0.75rem;
+    color: var(--color-brand);
+    font-family: var(--font-display);
+    font-size: 1.15rem;
+    font-weight: 800;
+  }
+
+  .target,
+  .note {
+    margin-top: 0.5rem;
+    color: var(--color-muted);
+  }
+
+  ul {
+    display: grid;
+    gap: 0.55rem;
+    margin: 0;
+    padding-left: 1.2rem;
+    color: var(--color-muted);
+  }
+
+  .note {
+    font-size: 0.95rem;
+  }
+
+  .button {
+    margin-top: auto;
+    align-self: flex-start;
+  }
+</style>

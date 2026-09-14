@@ -1,0 +1,81 @@
+---
+import Footer from '../components/Footer.astro';
+import Header from '../components/Header.astro';
+import PricingCard from '../components/PricingCard.astro';
+import BaseLayout from '../layouts/BaseLayout.astro';
+import { pricingPlans } from '../data/pricing';
+
+const title = 'Tarifs fiduciaire | LA FIDUCIAIRE';
+const description = 'Forfaits comptables transparents pour indépendants, petites entreprises et PME. Offres documentées dès CHF 190 HT par mois.';
+---
+
+<BaseLayout {title} {description}>
+  <Header />
+  <main id="contenu">
+    <section class="section page-intro">
+      <div class="container">
+        <p class="eyebrow">Tarifs</p>
+        <h1>Des forfaits clairs, adaptés au niveau d’accompagnement</h1>
+        <p class="lead">Les montants ci-dessous sont des prix de départ documentés. Le prix final dépend notamment de la structure, du volume de pièces, du nombre de collaborateurs et des prestations retenues.</p>
+      </div>
+    </section>
+
+    <section class="section section--alt" aria-labelledby="plans-title">
+      <div class="container">
+        <h2 id="plans-title">Comparer les offres</h2>
+        <div class="pricing-grid">
+          {pricingPlans.map((plan) => <PricingCard {plan} />)}
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container note-panel">
+        <div>
+          <p class="eyebrow">Devis</p>
+          <h2>Le périmètre est défini avant le mandat</h2>
+          <p>Un devis précise les prestations incluses et les éventuels travaux hors forfait avant le début de l’accompagnement.</p>
+        </div>
+        <a class="button button--primary" href="/contact/">Préparer un premier échange</a>
+      </div>
+    </section>
+  </main>
+  <Footer />
+</BaseLayout>
+
+<style>
+  .page-intro {
+    padding-top: clamp(4.5rem, 9vw, 7rem);
+  }
+
+  .pricing-grid {
+    display: grid;
+    gap: 1rem;
+    margin-top: 2.5rem;
+  }
+
+  .note-panel {
+    display: grid;
+    gap: 2rem;
+    align-items: end;
+  }
+
+  .note-panel p:not(.eyebrow) {
+    margin-top: 1rem;
+    color: var(--color-muted);
+  }
+
+  .note-panel .button {
+    justify-self: start;
+  }
+
+  @media (min-width: 48rem) {
+    .pricing-grid {
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .note-panel {
+      grid-template-columns: minmax(0, 1fr) auto;
+    }
+  }
+</style>
