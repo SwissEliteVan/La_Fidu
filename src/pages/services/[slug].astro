@@ -1,0 +1,117 @@
+---
+import Footer from '../../components/Footer.astro';
+import Header from '../../components/Header.astro';
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import { services, type Service } from '../../data/services';
+
+export function getStaticPaths() {
+  return services.map((service) => ({
+    params: { slug: service.slug },
+    props: { service },
+  }));
+}
+
+interface Props {
+  service: Service;
+}
+
+const { service } = Astro.props;
+const title = `${service.title} | LA FIDUCIAIRE`;
+const description = service.summary;
+---
+
+<BaseLayout {title} {description}>
+  <Header />
+  <main id="contenu">
+    <section class="section page-intro">
+      <div class="container narrow">
+        <p class="eyebrow">Services</p>
+        <h1>{service.title}</h1>
+        <p class="lead">{service.intro}</p>
+      </div>
+    </section>
+
+    <section class="section section--alt" aria-labelledby="included-title">
+      <div class="container two-columns">
+        <div>
+          <p class="eyebrow">Accompagnement</p>
+          <h2 id="included-title">Un cadre lisible</h2>
+          <p class="section-copy">Le contenu exact dépend du mandat convenu. Les éléments ci-dessous décrivent le périmètre de service sans remplacer un devis personnalisé.</p>
+        </div>
+        <ul class="check-list">
+          {service.points.map((point) => <li>{point}</li>)}
+        </ul>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container next-step">
+        <div>
+          <p class="eyebrow">Étape suivante</p>
+          <h2>Comparer le niveau d’accompagnement</h2>
+        </div>
+        <div class="actions">
+          <a class="button button--primary" href="/tarifs/">Voir les forfaits</a>
+          <a class="button button--secondary" href="/contact/">Parler de votre situation</a>
+        </div>
+      </div>
+    </section>
+  </main>
+  <Footer />
+</BaseLayout>
+
+<style>
+  .page-intro {
+    padding-top: clamp(4.5rem, 9vw, 7rem);
+  }
+
+  .narrow {
+    max-width: 58rem;
+  }
+
+  .two-columns,
+  .next-step {
+    display: grid;
+    gap: 2.5rem;
+  }
+
+  .section-copy {
+    margin-top: 1.25rem;
+    color: var(--color-muted);
+  }
+
+  .check-list {
+    display: grid;
+    gap: 0.85rem;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+
+  .check-list li {
+    border-bottom: 1px solid var(--color-border);
+    padding: 0 0 0.85rem 1.6rem;
+    position: relative;
+  }
+
+  .check-list li::before {
+    position: absolute;
+    left: 0;
+    color: var(--color-riviera);
+    content: '✓';
+    font-weight: 800;
+  }
+
+  @media (min-width: 48rem) {
+    .two-columns,
+    .next-step {
+      grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+      align-items: start;
+    }
+
+    .next-step .actions {
+      justify-content: flex-end;
+      margin-top: 0;
+    }
+  }
+</style>

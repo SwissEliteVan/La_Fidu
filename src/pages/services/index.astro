@@ -1,0 +1,71 @@
+---
+import Footer from '../../components/Footer.astro';
+import Header from '../../components/Header.astro';
+import ServiceCard from '../../components/ServiceCard.astro';
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import { services } from '../../data/services';
+
+const title = 'Services fiduciaires | LA FIDUCIAIRE';
+const description = 'Comptabilité, TVA, salaires, bouclement et accompagnement pour indépendants, TPE et PME à Vevey, sur la Riviera vaudoise et à Lausanne.';
+---
+
+<BaseLayout {title} {description}>
+  <Header />
+  <main id="contenu">
+    <section class="section page-intro">
+      <div class="container">
+        <p class="eyebrow">Services</p>
+        <h1>Une fiduciaire pour gérer, comprendre et anticiper</h1>
+        <p class="lead">Le niveau d’accompagnement dépend de votre structure, de votre volume et des sujets que vous souhaitez déléguer ou mieux comprendre.</p>
+      </div>
+    </section>
+
+    <section class="section section--alt" aria-labelledby="services-list-title">
+      <div class="container">
+        <h2 id="services-list-title">Choisir selon votre besoin</h2>
+        <div class="grid grid--3">
+          {services.map((service) => <ServiceCard {service} />)}
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container cta-panel">
+        <div>
+          <p class="eyebrow">Forfaits</p>
+          <h2>Un périmètre clair avant de commencer</h2>
+          <p>Les offres documentées commencent dès CHF 190 HT par mois. Le prix final dépend du volume et des prestations retenues.</p>
+        </div>
+        <a class="button button--primary" href="/tarifs/">Voir les tarifs</a>
+      </div>
+    </section>
+  </main>
+  <Footer />
+</BaseLayout>
+
+<style>
+  .page-intro {
+    padding-top: clamp(4.5rem, 9vw, 7rem);
+  }
+
+  .cta-panel {
+    display: grid;
+    gap: 2rem;
+    align-items: end;
+  }
+
+  .cta-panel p:not(.eyebrow) {
+    margin-top: 1rem;
+    color: var(--color-muted);
+  }
+
+  .cta-panel .button {
+    justify-self: start;
+  }
+
+  @media (min-width: 48rem) {
+    .cta-panel {
+      grid-template-columns: minmax(0, 1fr) auto;
+    }
+  }
+</style>

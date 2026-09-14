@@ -1,11 +1,13 @@
 ---
 import Footer from '../components/Footer.astro';
 import Header from '../components/Header.astro';
+import ServiceCard from '../components/ServiceCard.astro';
 import BaseLayout from '../layouts/BaseLayout.astro';
+import { services } from '../data/services';
 
 const title = 'Fiduciaire à Vevey, Riviera & Lausanne | LA FIDUCIAIRE';
-const description =
-  'Fiduciaire de proximité pour indépendants, TPE et PME à Vevey, sur la Riviera vaudoise et à Lausanne.';
+const description = 'Fiduciaire de proximité pour indépendants, TPE et PME à Vevey, sur la Riviera vaudoise et à Lausanne.';
+const featuredServices = services.filter(({ slug }) => ['independants', 'pme', 'salaires'].includes(slug));
 ---
 
 <BaseLayout {title} {description}>
@@ -17,13 +19,10 @@ const description =
         <div>
           <p class="eyebrow">Vevey · Riviera vaudoise · Lausanne</p>
           <h1>Une comptabilité claire pour avancer sereinement</h1>
-          <p class="lead">
-            LA FIDUCIAIRE accompagne les indépendants, TPE et PME avec une relation humaine,
-            des forfaits transparents et des explications compréhensibles.
-          </p>
+          <p class="lead">LA FIDUCIAIRE accompagne les indépendants, TPE et PME avec une relation humaine, des forfaits transparents et des explications compréhensibles.</p>
           <div class="actions">
-            <a class="button button--primary" href="#services">Découvrir les services</a>
-            <a class="button button--secondary" href="#approche">Notre approche</a>
+            <a class="button button--primary" href="/services/">Découvrir les services</a>
+            <a class="button button--secondary" href="/a-propos/">Notre approche</a>
           </div>
         </div>
         <aside class="hero__note" aria-label="Promesse de service">
@@ -38,19 +37,9 @@ const description =
         <p class="eyebrow">Services</p>
         <h2 id="services-title">Gérer, comprendre et anticiper</h2>
         <div class="grid grid--3">
-          <article class="card">
-            <h3>Comptabilité</h3>
-            <p>Tenue comptable, rapprochements et préparation des éléments nécessaires au suivi de l’activité.</p>
-          </article>
-          <article class="card">
-            <h3>TVA et salaires</h3>
-            <p>Accompagnement sur les obligations courantes, adapté au périmètre réel de votre entreprise.</p>
-          </article>
-          <article class="card">
-            <h3>Bouclement et conseil</h3>
-            <p>Lecture structurée des chiffres et accompagnement pour les décisions qui nécessitent de la visibilité.</p>
-          </article>
+          {featuredServices.map((service) => <ServiceCard {service} />)}
         </div>
+        <p class="section-link"><a href="/services/">Voir tous les services <span aria-hidden="true">→</span></a></p>
       </div>
     </section>
 
@@ -79,9 +68,11 @@ const description =
       <div class="container pricing-intro">
         <p class="eyebrow">Tarifs</p>
         <h2 id="tarifs-title">Des forfaits transparents</h2>
-        <p class="lead">
-          Les forfaits documentés commencent dès CHF 190 HT par mois pour une activité simple. Le périmètre et le prix final dépendent de la structure, du volume et des prestations retenues.
-        </p>
+        <p class="lead">Les forfaits documentés commencent dès CHF 190 HT par mois pour une activité simple. Le périmètre et le prix final dépendent de la structure, du volume et des prestations retenues.</p>
+        <div class="actions">
+          <a class="button button--primary" href="/tarifs/">Comparer les forfaits</a>
+          <a class="button button--secondary" href="/contact/">Préparer un échange</a>
+        </div>
       </div>
     </section>
   </main>
@@ -116,6 +107,17 @@ const description =
   .pricing-intro {
     display: grid;
     gap: 0;
+  }
+
+  .section-link {
+    margin-top: 1.5rem;
+    color: var(--color-accent-hover);
+    font-family: var(--font-display);
+    font-weight: 700;
+  }
+
+  .section-link a {
+    text-underline-offset: 0.2em;
   }
 
   @media (min-width: 64rem) {

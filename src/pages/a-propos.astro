@@ -1,0 +1,82 @@
+---
+import Footer from '../components/Footer.astro';
+import Header from '../components/Header.astro';
+import BaseLayout from '../layouts/BaseLayout.astro';
+
+const title = 'Notre approche | LA FIDUCIAIRE';
+const description = 'Une approche fiduciaire fondée sur la clarté, la relation humaine, des forfaits transparents et un accompagnement proactif.';
+---
+
+<BaseLayout {title} {description}>
+  <Header />
+  <main id="contenu">
+    <section class="section page-intro">
+      <div class="container narrow">
+        <p class="eyebrow">Notre approche</p>
+        <h1>La clarté comme principe de travail</h1>
+        <p class="lead">Vous devez pouvoir comprendre où en est votre entreprise, ce qui doit être fait et les décisions qui méritent votre attention.</p>
+      </div>
+    </section>
+
+    <section class="section section--alt" aria-labelledby="principles-title">
+      <div class="container">
+        <h2 id="principles-title">Une relation simple et structurée</h2>
+        <div class="grid grid--3">
+          <article class="card">
+            <h3>Clarté</h3>
+            <p>Des explications compréhensibles et un vocabulaire utile pour rendre les chiffres plus lisibles.</p>
+          </article>
+          <article class="card">
+            <h3>Relation humaine</h3>
+            <p>Un interlocuteur identifié et un accompagnement pensé pour les indépendants et entreprises de la région.</p>
+          </article>
+          <article class="card">
+            <h3>Proactivité</h3>
+            <p>Faire ressortir les prochaines étapes et les points d’attention plutôt que simplement enregistrer le passé.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" aria-labelledby="scope-title">
+      <div class="container scope-grid">
+        <div>
+          <p class="eyebrow">Positionnement</p>
+          <h2 id="scope-title">Digital quand c’est utile, humain quand cela compte</h2>
+        </div>
+        <div class="scope-copy">
+          <p>LA FIDUCIAIRE est conçue comme une fiduciaire de proximité, pas comme une banque, une fintech ou un logiciel comptable propriétaire.</p>
+          <p>Les outils digitaux servent à simplifier les échanges et l’organisation. Ils ne remplacent pas l’explication ni la responsabilité professionnelle.</p>
+        </div>
+      </div>
+    </section>
+  </main>
+  <Footer />
+</BaseLayout>
+
+<style>
+  .page-intro {
+    padding-top: clamp(4.5rem, 9vw, 7rem);
+  }
+
+  .narrow {
+    max-width: 58rem;
+  }
+
+  .scope-grid {
+    display: grid;
+    gap: 2.5rem;
+  }
+
+  .scope-copy {
+    display: grid;
+    gap: 1rem;
+    color: var(--color-muted);
+  }
+
+  @media (min-width: 48rem) {
+    .scope-grid {
+      grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+    }
+  }
+</style>
