@@ -1,0 +1,36 @@
+<footer class="site-footer">
+  <div class="container site-footer__inner">
+    <p class="site-footer__brand">LA FIDUCIAIRE</p>
+    <p>Vevey · Riviera vaudoise · Lausanne</p>
+  </div>
+</footer>
+
+<style>
+  .site-footer {
+    border-top: 1px solid var(--color-border);
+    padding-block: 2rem;
+    color: var(--color-muted);
+    font-size: 0.95rem;
+  }
+
+  .site-footer__inner {
+    display: flex;
+    flex-direction: column;
+    gap: 0.35rem;
+  }
+
+  .site-footer__brand {
+    color: var(--color-brand);
+    font-family: var(--font-display);
+    font-weight: 800;
+    letter-spacing: 0.06em;
+  }
+
+  @media (min-width: 48rem) {
+    .site-footer__inner {
+      flex-direction: row;
+      justify-content: space-between;
+      gap: 2rem;
+    }
+  }
+</style>

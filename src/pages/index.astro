@@ -1,0 +1,127 @@
+---
+import Footer from '../components/Footer.astro';
+import Header from '../components/Header.astro';
+import BaseLayout from '../layouts/BaseLayout.astro';
+
+const title = 'Fiduciaire à Vevey, Riviera & Lausanne | LA FIDUCIAIRE';
+const description =
+  'Fiduciaire de proximité pour indépendants, TPE et PME à Vevey, sur la Riviera vaudoise et à Lausanne.';
+---
+
+<BaseLayout {title} {description}>
+  <Header />
+
+  <main id="contenu">
+    <section class="section hero">
+      <div class="container hero__grid">
+        <div>
+          <p class="eyebrow">Vevey · Riviera vaudoise · Lausanne</p>
+          <h1>Une comptabilité claire pour avancer sereinement</h1>
+          <p class="lead">
+            LA FIDUCIAIRE accompagne les indépendants, TPE et PME avec une relation humaine,
+            des forfaits transparents et des explications compréhensibles.
+          </p>
+          <div class="actions">
+            <a class="button button--primary" href="#services">Découvrir les services</a>
+            <a class="button button--secondary" href="#approche">Notre approche</a>
+          </div>
+        </div>
+        <aside class="hero__note" aria-label="Promesse de service">
+          <p class="hero__note-title">Clarté avant tout</p>
+          <p>Comprendre où vous en êtes, ce qui doit être fait et les décisions qui méritent votre attention.</p>
+        </aside>
+      </div>
+    </section>
+
+    <section class="section section--alt" id="services" aria-labelledby="services-title">
+      <div class="container">
+        <p class="eyebrow">Services</p>
+        <h2 id="services-title">Gérer, comprendre et anticiper</h2>
+        <div class="grid grid--3">
+          <article class="card">
+            <h3>Comptabilité</h3>
+            <p>Tenue comptable, rapprochements et préparation des éléments nécessaires au suivi de l’activité.</p>
+          </article>
+          <article class="card">
+            <h3>TVA et salaires</h3>
+            <p>Accompagnement sur les obligations courantes, adapté au périmètre réel de votre entreprise.</p>
+          </article>
+          <article class="card">
+            <h3>Bouclement et conseil</h3>
+            <p>Lecture structurée des chiffres et accompagnement pour les décisions qui nécessitent de la visibilité.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="approche" aria-labelledby="approche-title">
+      <div class="container">
+        <p class="eyebrow">Notre approche</p>
+        <h2 id="approche-title">Une relation fiduciaire simple et proactive</h2>
+        <div class="grid grid--3">
+          <article class="card">
+            <h3>Clarté</h3>
+            <p>Des explications compréhensibles et un vocabulaire utile, sans jargon inutile.</p>
+          </article>
+          <article class="card">
+            <h3>Relation humaine</h3>
+            <p>Un accompagnement de proximité conçu pour les entrepreneurs de la région.</p>
+          </article>
+          <article class="card">
+            <h3>Suivi proactif</h3>
+            <p>Une organisation qui vise à rendre les prochaines étapes et les points d’attention plus lisibles.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--alt" id="tarifs" aria-labelledby="tarifs-title">
+      <div class="container pricing-intro">
+        <p class="eyebrow">Tarifs</p>
+        <h2 id="tarifs-title">Des forfaits transparents</h2>
+        <p class="lead">
+          Les forfaits documentés commencent dès CHF 190 HT par mois pour une activité simple. Le périmètre et le prix final dépendent de la structure, du volume et des prestations retenues.
+        </p>
+      </div>
+    </section>
+  </main>
+
+  <Footer />
+</BaseLayout>
+
+<style>
+  .hero {
+    padding-top: clamp(5rem, 10vw, 8rem);
+  }
+
+  .hero__grid {
+    display: grid;
+    gap: 2.5rem;
+    align-items: end;
+  }
+
+  .hero__note {
+    border-left: 3px solid var(--color-accent);
+    padding: 0.5rem 0 0.5rem 1.25rem;
+    color: var(--color-muted);
+  }
+
+  .hero__note-title {
+    margin-bottom: 0.35rem;
+    color: var(--color-brand);
+    font-family: var(--font-display);
+    font-weight: 700;
+  }
+
+  .pricing-intro {
+    display: grid;
+    gap: 0;
+  }
+
+  @media (min-width: 64rem) {
+    .hero__grid {
+      grid-template-columns: minmax(0, 2fr) minmax(18rem, 0.8fr);
+      gap: 5rem;
+    }
+  }
+</style>
