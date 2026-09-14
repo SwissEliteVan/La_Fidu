@@ -1,0 +1,141 @@
+---
+import Footer from './Footer.astro';
+import Header from './Header.astro';
+import LocalTrustBar from './LocalTrustBar.astro';
+import BaseLayout from '../layouts/BaseLayout.astro';
+import type { LocationPageData } from '../data/locations';
+
+interface Props {
+  location: LocationPageData;
+}
+
+const { location } = Astro.props;
+---
+
+<BaseLayout title={location.title} description={location.description}>
+  <Header />
+  <main id="contenu">
+    <section class="section local-hero">
+      <div class="container local-hero__grid">
+        <div>
+          <p class="eyebrow">{location.place}</p>
+          <h1>{location.heading}</h1>
+          <p class="lead">{location.intro}</p>
+          <div class="actions">
+            <a class="button button--primary" href="/services/">Voir les services</a>
+            <a class="button button--secondary" href="/tarifs/">Comparer les forfaits</a>
+          </div>
+        </div>
+        <aside class="local-note" aria-label={`Accompagnement à ${location.place}`}>
+          <p>{location.serviceContext}</p>
+        </aside>
+      </div>
+    </section>
+
+    <LocalTrustBar />
+
+    <section class="section section--alt" aria-labelledby="local-services-title">
+      <div class="container">
+        <p class="eyebrow">Accompagnement</p>
+        <h2 id="local-services-title">Des besoins courants jusqu’au pilotage</h2>
+        <div class="grid grid--3">
+          <article class="card">
+            <h3>Comptabilité</h3>
+            <p>Tenue comptable, organisation des pièces et préparation des éléments utiles au bouclement.</p>
+          </article>
+          <article class="card">
+            <h3>TVA et salaires</h3>
+            <p>Suivi des opérations prévues par le mandat, coordonné avec la comptabilité courante.</p>
+          </article>
+          <article class="card">
+            <h3>Pilotage</h3>
+            <p>Reporting, trésorerie, rentabilité et rendez-vous de suivi selon l’offre retenue.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" aria-labelledby="local-method-title">
+      <div class="container method-grid">
+        <div>
+          <p class="eyebrow">Méthode</p>
+          <h2 id="local-method-title">Une relation de proximité sans inventer de complexité</h2>
+        </div>
+        <div class="method-copy">
+          <p>Le travail commence par un périmètre clair : ce qui est inclus, la fréquence de suivi et les informations à transmettre.</p>
+          <p>Les outils digitaux servent à simplifier les échanges. Les décisions qui demandent une explication restent traitées dans une relation humaine.</p>
+          <p><a href="/a-propos/">Découvrir notre approche <span aria-hidden="true">→</span></a></p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--alt">
+      <div class="container local-cta">
+        <div>
+          <p class="eyebrow">Tarifs</p>
+          <h2>Des forfaits documentés dès CHF 190 HT par mois</h2>
+          <p>Le prix final dépend de la structure, du volume et des prestations retenues.</p>
+        </div>
+        <a class="button button--primary" href="/tarifs/">Voir les tarifs</a>
+      </div>
+    </section>
+  </main>
+  <Footer />
+</BaseLayout>
+
+<style>
+  .local-hero {
+    padding-top: clamp(4.5rem, 9vw, 7rem);
+  }
+
+  .local-hero__grid,
+  .method-grid,
+  .local-cta {
+    display: grid;
+    gap: 2.5rem;
+    align-items: start;
+  }
+
+  .local-note {
+    border-left: 3px solid var(--color-accent);
+    padding: 0.25rem 0 0.25rem 1.5rem;
+    color: var(--color-muted);
+  }
+
+  .method-copy {
+    display: grid;
+    gap: 1rem;
+    color: var(--color-muted);
+  }
+
+  .method-copy a {
+    color: var(--color-accent-hover);
+    font-weight: 700;
+    text-underline-offset: 0.2em;
+  }
+
+  .local-cta p:not(.eyebrow) {
+    margin-top: 1rem;
+    color: var(--color-muted);
+  }
+
+  .local-cta .button {
+    justify-self: start;
+  }
+
+  @media (min-width: 48rem) {
+    .local-hero__grid {
+      grid-template-columns: minmax(0, 1.4fr) minmax(18rem, 0.7fr);
+      align-items: end;
+    }
+
+    .method-grid,
+    .local-cta {
+      grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+    }
+
+    .local-cta {
+      align-items: end;
+    }
+  }
+</style>

@@ -1,13 +1,14 @@
 ---
 import Footer from '../components/Footer.astro';
 import Header from '../components/Header.astro';
+import LocalTrustBar from '../components/LocalTrustBar.astro';
 import ServiceCard from '../components/ServiceCard.astro';
 import BaseLayout from '../layouts/BaseLayout.astro';
 import { services } from '../data/services';
 
 const title = 'Fiduciaire à Vevey, Riviera & Lausanne | LA FIDUCIAIRE';
 const description = 'Fiduciaire de proximité pour indépendants, TPE et PME à Vevey, sur la Riviera vaudoise et à Lausanne.';
-const featuredServices = services.filter(({ slug }) => ['independants', 'pme', 'salaires'].includes(slug));
+const featuredServices = services.filter(({ slug }) => ['independants', 'pme', 'salaries'].includes(slug));
 ---
 
 <BaseLayout {title} {description}>
@@ -31,6 +32,8 @@ const featuredServices = services.filter(({ slug }) => ['independants', 'pme', '
         </aside>
       </div>
     </section>
+
+    <LocalTrustBar />
 
     <section class="section section--alt" id="services" aria-labelledby="services-title">
       <div class="container">

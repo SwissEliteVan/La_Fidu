@@ -1,0 +1,47 @@
+<section class="local-trust" aria-labelledby="zones-title">
+  <div class="container local-trust__inner">
+    <p id="zones-title">Zones accompagnées</p>
+    <nav aria-label="Zones desservies">
+      <a href="/fiduciaire-vevey/">Vevey</a>
+      <a href="/fiduciaire-riviera-vaudoise/">Riviera vaudoise</a>
+      <a href="/fiduciaire-lausanne/">Lausanne</a>
+    </nav>
+  </div>
+</section>
+
+<style>
+  .local-trust {
+    border-block: 1px solid var(--color-border);
+    background: var(--color-surface);
+  }
+
+  .local-trust__inner {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.75rem 1.5rem;
+    align-items: center;
+    justify-content: space-between;
+    padding-block: 1rem;
+  }
+
+  p {
+    color: var(--color-riviera);
+    font-family: var(--font-display);
+    font-size: var(--text-sm);
+    font-weight: 800;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+  }
+
+  nav {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem 1.25rem;
+  }
+
+  a {
+    color: var(--color-brand);
+    font-weight: 700;
+    text-underline-offset: 0.2em;
+  }
+</style>
