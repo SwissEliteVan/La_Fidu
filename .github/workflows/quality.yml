@@ -4,7 +4,6 @@ on:
   push:
     branches:
       - main
-      - agent/bootstrap-astro
   pull_request:
 
 permissions:
@@ -13,7 +12,7 @@ permissions:
 jobs:
   quality:
     runs-on: ubuntu-latest
-    timeout-minutes: 10
+    timeout-minutes: 15
     steps:
       - name: Checkout
         uses: actions/checkout@v5
@@ -31,3 +30,34 @@ jobs:
 
       - name: Build static site
         run: npm run build
+
+      - name: Install Chromium for visual QA
+        run: npx --yes playwright@1.63.0 install --with-deps chromium
+
+      - name: Start preview server
+        run: |
+          npm run preview -- --host 127.0.0.1 > /tmp/astro-preview.log 2>&1 &
+          for attempt in {1..30}; do
+            if curl --fail --silent http://127.0.0.1:4321/ > /dev/null; then
+              exit 0
+            fi
+            sleep 1
+          done
+          cat /tmp/astro-preview.log
+          exit 1
+
+      - name: Capture responsive screenshots
+        run: |
+          mkdir -p qa
+          npx --yes playwright@1.63.0 screenshot --browser=chromium --viewport-size="360,900" --full-page http://127.0.0.1:4321/ qa/home-360.png
+          npx --yes playwright@1.63.0 screenshot --browser=chromium --viewport-size="768,1024" --full-page http://127.0.0.1:4321/ qa/home-768.png
+          npx --yes playwright@1.63.0 screenshot --browser=chromium --viewport-size="1440,1000" --full-page http://127.0.0.1:4321/ qa/home-1440.png
+
+      - name: Upload QA artifacts
+        uses: actions/upload-artifact@v4
+        with:
+          name: quality-artifacts
+          path: |
+            qa/*.png
+            package-lock.json
+          if-no-files-found: error
