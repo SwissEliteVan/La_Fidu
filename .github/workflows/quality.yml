@@ -49,7 +49,7 @@ jobs:
       - name: Smoke core routes
         run: |
           set -e
-          for route in / /services/ /services/independants/ /services/pme/ /services/salaires/ /services/tva/ /services/creation-entreprise/ /services/bouclement/ /services/conseil-fiscal/ /tarifs/ /a-propos/ /contact/; do
+          for route in / /services/ /services/independants/ /services/pme/ /services/salaries/ /services/tva/ /services/creation-entreprise/ /services/bouclement/ /services/conseil-fiscal/ /tarifs/ /a-propos/ /contact/ /fiduciaire-vevey/ /fiduciaire-riviera-vaudoise/ /fiduciaire-lausanne/; do
             curl --fail --silent --show-error "http://127.0.0.1:4321${route}" > /dev/null
           done
           test "$(curl --silent --output /dev/null --write-out '%{http_code}' http://127.0.0.1:4321/page-inexistante)" = "404"
@@ -58,7 +58,7 @@ jobs:
         run: |
           set -e
           mkdir -p qa
-          for route in home services tarifs a-propos contact; do
+          for route in home services tarifs a-propos contact fiduciaire-vevey; do
             case "$route" in
               home) url="/" ;;
               *) url="/$route/" ;;

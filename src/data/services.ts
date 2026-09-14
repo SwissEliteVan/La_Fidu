@@ -35,7 +35,7 @@ export const services: Service[] = [
     ],
   },
   {
-    slug: 'salaires',
+    slug: 'salaries',
     title: 'Gestion des salaires',
     shortTitle: 'Salaires',
     summary: 'Organiser la gestion courante des salaires et le suivi social prévu dans le mandat.',
