@@ -1,0 +1,61 @@
+<header class="site-header">
+  <div class="container site-header__inner">
+    <a class="brand" href="/" aria-label="LA FIDUCIAIRE — accueil">LA FIDUCIAIRE</a>
+    <nav aria-label="Navigation principale">
+      <ul>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#approche">Notre approche</a></li>
+        <li><a href="#tarifs">Tarifs</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<style>
+  .site-header {
+    border-bottom: 1px solid var(--color-border);
+    background: rgba(255, 255, 255, 0.97);
+  }
+
+  .site-header__inner {
+    display: flex;
+    min-height: 4.5rem;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+  }
+
+  .brand {
+    color: var(--color-brand);
+    font-family: var(--font-display);
+    font-size: 0.95rem;
+    font-weight: 800;
+    letter-spacing: 0.08em;
+    text-decoration: none;
+  }
+
+  ul {
+    display: none;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+
+  nav a {
+    color: var(--color-muted);
+    font-size: 0.95rem;
+    font-weight: 600;
+    text-decoration: none;
+  }
+
+  nav a:hover {
+    color: var(--color-brand);
+  }
+
+  @media (min-width: 48rem) {
+    ul {
+      display: flex;
+      gap: 1.5rem;
+    }
+  }
+</style>

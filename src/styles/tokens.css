@@ -1,0 +1,40 @@
+:root {
+  --color-ink: #202a2e;
+  --color-muted: #607077;
+  --color-brand: #123047;
+  --color-accent: #18a6a6;
+  --color-accent-hover: #128686;
+  --color-riviera: #557568;
+  --color-surface: #ffffff;
+  --color-surface-alt: #f6f8f7;
+  --color-border: #dce5e6;
+
+  --font-display: Manrope, Arial, sans-serif;
+  --font-body: "Source Sans 3", Arial, sans-serif;
+
+  --container: 73.75rem;
+  --gutter: 1.25rem;
+  --section-space: 4rem;
+  --radius: 1rem;
+  --radius-pill: 999px;
+
+  --text-sm: 0.875rem;
+  --text-base: 1.0625rem;
+  --text-h3: clamp(1.375rem, 1.2rem + 0.6vw, 1.625rem);
+  --text-h2: clamp(2rem, 1.7rem + 1.2vw, 2.625rem);
+  --text-h1: clamp(2.5rem, 2rem + 2vw, 3.5rem);
+}
+
+@media (min-width: 48rem) {
+  :root {
+    --gutter: 1.5rem;
+    --section-space: 6rem;
+    --text-base: 1.125rem;
+  }
+}
+
+@media (min-width: 64rem) {
+  :root {
+    --gutter: 2rem;
+  }
+}
